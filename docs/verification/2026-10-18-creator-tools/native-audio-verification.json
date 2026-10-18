@@ -1,0 +1,205 @@
+{
+  "verifiedAt": "2026-10-18T05:48:33.511Z",
+  "method": "Hermes CDP invokes mounted application handlers on the iPhone 16 simulator; not native touch automation or physical-device listening.",
+  "isolatedProject": "creator-audio-proof",
+  "detached": {
+    "assets": [
+      {
+        "duration": 8,
+        "id": "creator-detach-source",
+        "kind": "video",
+        "path": "media/creator-detach-proof.mp4"
+      }
+    ],
+    "audio": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "mvdefkjhm3g9n1",
+        "in": 1,
+        "out": 5,
+        "start": 0,
+        "volume": 0.6
+      }
+    ],
+    "main": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "creator-detach-clip",
+        "in": 1,
+        "out": 5,
+        "speed": 1,
+        "volume": 0
+      }
+    ],
+    "project": "creator-audio-proof",
+    "selected": "mvdefkjhm3g9n1",
+    "soundPlaying": false
+  },
+  "preview": {
+    "assets": [
+      {
+        "duration": 8,
+        "id": "creator-detach-source",
+        "kind": "video",
+        "path": "media/creator-detach-proof.mp4"
+      }
+    ],
+    "audio": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "mvdefkjhm3g9n1",
+        "in": 1,
+        "out": 5,
+        "start": 0,
+        "volume": 0.6
+      }
+    ],
+    "main": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "creator-detach-clip",
+        "in": 1,
+        "out": 5,
+        "speed": 1,
+        "volume": 0
+      }
+    ],
+    "project": "creator-audio-proof",
+    "selected": "mvdefkjhm3g9n1",
+    "soundPlaying": true
+  },
+  "added": {
+    "assets": [
+      {
+        "duration": 8,
+        "id": "creator-detach-source",
+        "kind": "video",
+        "path": "media/creator-detach-proof.mp4"
+      },
+      {
+        "duration": 16,
+        "id": "mvdegsxsslwhl5",
+        "kind": "audio",
+        "path": "media/mvdegsxsslwhl5.wav"
+      }
+    ],
+    "audio": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "mvdefkjhm3g9n1",
+        "in": 1,
+        "out": 5,
+        "start": 0,
+        "volume": 0.6
+      },
+      {
+        "assetId": "mvdegsxsslwhl5",
+        "fadeIn": 0.15,
+        "fadeOut": 0.4,
+        "id": "sound-mvdegsxsslwhl5",
+        "in": 0,
+        "out": 2.2005928507692305,
+        "start": 1.7994071492307695,
+        "volume": 0.35
+      }
+    ],
+    "main": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "creator-detach-clip",
+        "in": 1,
+        "out": 5,
+        "speed": 1,
+        "volume": 0
+      }
+    ],
+    "project": "creator-audio-proof",
+    "selected": "sound-mvdegsxsslwhl5",
+    "soundPlaying": false
+  },
+  "waveform": {
+    "duration": 16,
+    "maxPeak": 0.5034648776054382,
+    "peakBins": 1024,
+    "status": "complete"
+  },
+  "balanced": {
+    "assets": [
+      {
+        "duration": 8,
+        "id": "creator-detach-source",
+        "kind": "video",
+        "path": "media/creator-detach-proof.mp4"
+      },
+      {
+        "duration": 16,
+        "id": "mvdegsxsslwhl5",
+        "kind": "audio",
+        "path": "media/mvdegsxsslwhl5.wav"
+      }
+    ],
+    "audio": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "mvdefkjhm3g9n1",
+        "in": 1,
+        "out": 5,
+        "start": 0,
+        "volume": 0.6
+      },
+      {
+        "assetId": "mvdegsxsslwhl5",
+        "fadeIn": 0.15,
+        "fadeOut": 0.4,
+        "id": "sound-mvdegsxsslwhl5",
+        "in": 0,
+        "out": 2.2005928507692305,
+        "start": 1.7994071492307695,
+        "volume": 1
+      }
+    ],
+    "main": [
+      {
+        "assetId": "creator-detach-source",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "id": "creator-detach-clip",
+        "in": 1,
+        "out": 5,
+        "speed": 1,
+        "volume": 0
+      }
+    ],
+    "project": "creator-audio-proof",
+    "selected": "sound-mvdegsxsslwhl5",
+    "soundPlaying": false
+  },
+  "export": {
+    "file": "audio-tools-proof.mp4",
+    "video": {
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": "96"
+    },
+    "duration": 4,
+    "audio": "AAC",
+    "fullDecodePassed": true,
+    "meanVolumeDb": -20.4,
+    "maxVolumeDb": -6.1
+  }
+}

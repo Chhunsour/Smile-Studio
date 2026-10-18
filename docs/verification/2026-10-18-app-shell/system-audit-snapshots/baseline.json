@@ -1,0 +1,116 @@
+{
+  "osAppearance": "light",
+  "preferences": {
+    "appearance": "light",
+    "avatarTone": "sunshine",
+    "bio": "",
+    "defaultAspect": "9:16",
+    "displayName": "Your studio",
+    "exportFps": 30,
+    "exportResolution": 1080
+  },
+  "preferenceFileExists": true,
+  "preferenceFileSHA256": "4489f9560a7f75e278de5e8e494799f8e18a922b9a8375c98cbdbf47dcc0294f",
+  "projectCount": 4,
+  "mounted": {
+    "directRootChild": {
+      "backgroundColor": "#F7F6F2",
+      "name": "GestureHandlerRootView"
+    },
+    "error": null,
+    "nativeAppearance": "light",
+    "palettes": {
+      "dark": {
+        "accent": "#F4CF75",
+        "accentInk": "#292010",
+        "accentSoft": "#383123",
+        "accentText": "#F4CF75",
+        "bg": "#101113",
+        "border": "#32373D",
+        "borderStrong": "#4A515A",
+        "danger": "#FF8C8D",
+        "overlay": "rgba(6,8,10,0.68)",
+        "selection": "#F4CF75",
+        "success": "#A9D6B9",
+        "surface": "#191B1E",
+        "surface2": "#202327",
+        "surface3": "#2A2E33",
+        "surfaceRaised": "#25292E",
+        "text": "#F4F3EF",
+        "textDim": "#B1B7BD",
+        "textFaint": "#929AA4"
+      },
+      "light": {
+        "accent": "#F0CA71",
+        "accentInk": "#30240E",
+        "accentSoft": "#FBF0D4",
+        "accentText": "#80601C",
+        "bg": "#F7F6F2",
+        "border": "#DEDFD7",
+        "borderStrong": "#C7CBC1",
+        "danger": "#BC4247",
+        "overlay": "rgba(25,32,25,0.40)",
+        "selection": "#B48628",
+        "success": "#39714C",
+        "surface": "#FFFFFF",
+        "surface2": "#F0EFEA",
+        "surface3": "#E5E5DF",
+        "surfaceRaised": "#FFFFFF",
+        "text": "#242924",
+        "textDim": "#60695F",
+        "textFaint": "#737C72"
+      }
+    },
+    "pathname": "/",
+    "preferences": {
+      "appearance": "light",
+      "avatarTone": "sunshine",
+      "bio": "",
+      "defaultAspect": "9:16",
+      "displayName": "Your studio",
+      "exportFps": 30,
+      "exportResolution": 1080
+    },
+    "ready": true,
+    "restorationError": null,
+    "restorationPending": false,
+    "rootFound": true,
+    "rootViews": [
+      {
+        "backgroundColor": "#F7F6F2",
+        "name": "GestureHandlerRootView"
+      }
+    ],
+    "segments": [
+      "(tabs)"
+    ],
+    "statusBars": [
+      {
+        "name": "StatusBar",
+        "style": "dark"
+      },
+      {
+        "barStyle": "dark-content",
+        "name": "StatusBar"
+      }
+    ],
+    "themes": [
+      {
+        "background": "#F7F6F2",
+        "card": "#FFFFFF",
+        "dark": false,
+        "name": "ThemeProvider",
+        "primary": "#80601C",
+        "text": "#242924"
+      },
+      {
+        "background": "#F7F6F2",
+        "card": "#FFFFFF",
+        "dark": false,
+        "name": "ThemeContext",
+        "primary": "#80601C",
+        "text": "#242924"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "audio": {
+    "id": "mvdgchz3hvuaqk",
+    "assetId": "source",
+    "start": 1,
+    "in": 3,
+    "out": 7,
+    "volume": 0.6,
+    "fadeIn": 0.1,
+    "fadeOut": 0.2
+  },
+  "originalVolume": 0,
+  "unaffectedIntroVolume": 0.4,
+  "undoSteps": 1,
+  "selected": "mvdgchz3hvuaqk",
+  "panel": "audioTools",
+  "mountedToolbarHandler": true
+}

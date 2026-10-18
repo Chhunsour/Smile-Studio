@@ -1,0 +1,149 @@
+{
+  "sdkVersion": "57.0.0",
+  "appUserInterfaceStyle": "automatic",
+  "ios": {
+    "UIUserInterfaceStyle": "Automatic",
+    "RCTRootViewBackgroundColor": "0xfff7f6f2",
+    "launchStoryboard": "SplashScreen",
+    "storyboardLogo": {
+      "name": "SplashScreenLogo",
+      "width": 96,
+      "height": 96
+    },
+    "storyboardNamedBackground": {
+      "$": {
+        "name": "SplashScreenBackground"
+      },
+      "color": [
+        {
+          "$": {
+            "alpha": "1.000",
+            "blue": "0.949019607843137",
+            "green": "0.964705882352941",
+            "red": "0.968627450980392",
+            "customColorSpace": "sRGB",
+            "colorSpace": "custom"
+          }
+        }
+      ]
+    }
+  },
+  "android": {
+    "userInterfaceStyle": "automatic",
+    "colors": {
+      "iconBackground": "#FFD23F",
+      "colorPrimary": "#023c69",
+      "activityBackground": "#F7F6F2",
+      "splashscreen_background": "#F7F6F2"
+    },
+    "colorsNight": {
+      "splashscreen_background": "#101113"
+    },
+    "styles": {
+      "resources": {
+        "$": {
+          "xmlns:tools": "http://schemas.android.com/tools"
+        },
+        "style": [
+          {
+            "$": {
+              "name": "AppTheme",
+              "parent": "Theme.AppCompat.Light.NoActionBar"
+            },
+            "item": [
+              {
+                "$": {
+                  "name": "colorPrimary"
+                },
+                "_": "@color/colorPrimary"
+              },
+              {
+                "$": {
+                  "name": "android:statusBarColor"
+                },
+                "_": "@android:color/transparent"
+              },
+              {
+                "$": {
+                  "name": "android:navigationBarColor"
+                },
+                "_": "@android:color/transparent"
+              },
+              {
+                "$": {
+                  "name": "android:windowBackground"
+                },
+                "_": "@color/activityBackground"
+              }
+            ]
+          },
+          {
+            "$": {
+              "name": "Theme.App.SplashScreen",
+              "parent": "Theme.SplashScreen"
+            },
+            "item": [
+              {
+                "$": {
+                  "name": "windowSplashScreenBackground"
+                },
+                "_": "@color/splashscreen_background"
+              },
+              {
+                "$": {
+                  "name": "windowSplashScreenAnimatedIcon"
+                },
+                "_": "@drawable/splashscreen_logo"
+              },
+              {
+                "$": {
+                  "name": "postSplashScreenTheme"
+                },
+                "_": "@style/AppTheme"
+              },
+              {
+                "$": {
+                  "name": "android:windowSplashScreenBehavior"
+                },
+                "_": "icon_preferred"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "splashPluginOptions": {
+    "backgroundColor": "#F7F6F2",
+    "image": "./assets/images/splash-icon.png",
+    "imageWidth": 96,
+    "dark": {
+      "image": "./assets/images/splash-icon.png",
+      "backgroundColor": "#101113"
+    }
+  },
+  "sourceManifestsEqual": true,
+  "sourceHash": "ed3416d3a3bd628e8ebb7c62497a3175ccf036e25d9db37520c5b216da11df1d",
+  "sourceFiles": 105,
+  "allAuditedFilesUnchanged": true,
+  "nativeGeneratedDirsInMirror": {
+    "ios": false,
+    "android": false
+  },
+  "limitations": {
+    "iosDarkSplashAssets": "Not evaluated: withIosSplashColors/withIosSplashAssets register dangerous mods, excluded by introspection. Config supplies dark #101113 and same Smile mark.",
+    "androidStylesFallback": "Mirror has no Android project; AppTheme Light.NoActionBar is introspection fallback, not generated RN template. Original generated AppTheme is DayNight.NoActionBar. Automatic appearance is driven by expo_system_ui_user_interface_style=automatic.",
+    "runtime": "No service, build, simulator, device, settings, or native config sync performed."
+  },
+  "originalGeneratedArtifacts": {
+    "iosUIUserInterfaceStyle": "Dark",
+    "iosRCTRootViewBackgroundColor": "0xFF000000",
+    "iosSplashBackground": "#000000, single universal variant",
+    "iosSplashImages": "1x/2x/3x universal only; no dark variants",
+    "androidUserInterfaceStyle": "dark",
+    "androidActivityBackground": "#000000",
+    "androidSplashBackground": "#000000",
+    "androidNightColors": "empty",
+    "androidAppTheme": "Theme.AppCompat.DayNight.NoActionBar"
+  }
+}

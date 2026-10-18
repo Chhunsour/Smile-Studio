@@ -1,0 +1,110 @@
+{
+  "verifiedAt": "2026-10-18T06:27:15.699Z",
+  "status": "passed",
+  "workspace": "/Volumes/Transcend/Smile Studio",
+  "source": {
+    "fileCount": 115,
+    "originalHashesMatch": true,
+    "manifest": "source-manifest.json",
+    "packageLockSha256": "1cd92f6793b8dcaf98dab28c9b3b5da43affe6d9052543149a68d75223e7ac8f"
+  },
+  "checks": {
+    "automatedTests": {
+      "passed": 106,
+      "failed": 0,
+      "command": "npm test",
+      "log": "/tmp/smile-studio-ssd-tests.log"
+    },
+    "typecheck": {
+      "passed": true,
+      "command": "npm run typecheck",
+      "log": "/tmp/smile-studio-ssd-typecheck.log"
+    },
+    "lint": {
+      "passed": true,
+      "warnings": 0,
+      "command": "npm run lint",
+      "log": "/tmp/smile-studio-ssd-lint.log"
+    },
+    "diffWhitespace": {
+      "passed": true,
+      "command": "git diff --check"
+    },
+    "iosBuild": {
+      "passed": true,
+      "targets": [
+        "original checkout Debug simulator",
+        "synchronized Automatic-appearance Debug simulator"
+      ],
+      "logs": [
+        "/tmp/smile-studio-upgrade-ios.log",
+        "/tmp/smile-studio-ssd-ios.log"
+      ],
+      "dependencyWarnings": true
+    },
+    "androidEngineCompile": {
+      "passed": true,
+      "command": ":smile-engine:compileDebugKotlin",
+      "runtimeExportTested": false
+    },
+    "filesPicker": {
+      "presented": true,
+      "method": "Invoke mounted All tools > Import audio handlers, wait for native dismissal and fully loaded Files Recents, capture native simulator frame",
+      "screenshot": "native-files-picker.png",
+      "externalFileSelectionTested": false
+    },
+    "systemAppearance": {
+      "passed": true,
+      "report": "../2026-10-18-app-shell/system-appearance-report.json",
+      "exactPreferencesAndProjectsRestored": true
+    },
+    "audio": {
+      "passed": true,
+      "report": "native-audio-verification.json",
+      "artifact": "audio-tools-proof.mp4"
+    },
+    "staleSpeedCallback": {
+      "passed": true,
+      "report": "native-slider-verification.json"
+    },
+    "repeatBoundary": {
+      "passed": true,
+      "report": "native-repeat-verification.json",
+      "liveProjectUntouched": true
+    }
+  },
+  "portraitExport": {
+    "artifact": "creator-tools-proof.mp4",
+    "sha256": "02de6aeae3864f5c41c1fb34a69aa94fe7342efe7a51cdfd7ef9b3f4ffa8b432",
+    "bytes": 1625213,
+    "fixture": "creator-proof-project.json",
+    "fixtureSha256": "d9465ae48c376c6d14d13357279c680cf53eb74e539b72f9e8215a7cd4e0c4a3",
+    "width": 720,
+    "height": 1280,
+    "fps": "24/1",
+    "frames": 384,
+    "seconds": 16,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "fullDecodePassed": true,
+    "decodeCommand": "ffmpeg -v error -i creator-tools-proof.mp4 -f null -",
+    "effects": {
+      "passed": 15,
+      "report": "native-effects-analysis.json"
+    },
+    "newSpatialAnimations": {
+      "passed": 6,
+      "report": "native-animation-analysis.json",
+      "fadeOnlyFallbackRejected": true
+    },
+    "method": "NativeEngine export on iPhone 16 simulator, strict immutable portrait fixture; decoded-pixel effects reference and spatial-transform geometry analysis",
+    "harnessCorrection": "An initial harness call placed --fixture in the wrong argument position and exported a saved draft. Strict analyzers rejected its aspect/title mismatch. Explicit fixture injection and a required-input guard corrected the harness; the live draft was not changed."
+  },
+  "limitations": [
+    "Native handler integration is not physical touch automation.",
+    "Microphone recording and physical haptics remain unverified.",
+    "Android runtime export and a signed release build remain unverified.",
+    "Effects use color/texture primitives, not optical glow or AI segmentation.",
+    "Automatic transcription, background removal, motion tracking, video overlays, reverse and speed curves are not implemented."
+  ]
+}

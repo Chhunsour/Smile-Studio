@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-18T05:52:23.731Z",
+  "method": "Invoke mounted native-screen Speed callbacks via Hermes CDP, not touch automation",
+  "changedPanel": {
+    "changedPanelBlocked": true,
+    "speed": 1
+  },
+  "changedBaseValue": {
+    "queuedStaleCommitBlocked": true,
+    "restoredSpeed": 1,
+    "validCommit": 0.9
+  },
+  "unitTests": 5,
+  "initialUnexpectedSpeedTrigger": "Unconfirmed; cancellation and stale-write defects fixed independently"
+}

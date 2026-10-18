@@ -1,0 +1,669 @@
+{
+  "mirror": "/private/tmp/smile-studio-verified",
+  "source": "/Volumes/Transcend/Smile Studio",
+  "fileCount": 110,
+  "allMatch": true,
+  "mismatches": [],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sourceSHA256": "1044ca3cb6bbe9ef040cdad2c9314bf75d93129778690378f2f9e710e1fe23d2",
+      "mirrorSHA256": "1044ca3cb6bbe9ef040cdad2c9314bf75d93129778690378f2f9e710e1fe23d2",
+      "match": true
+    },
+    {
+      "path": ".prettierrc",
+      "sourceSHA256": "356971de0359f4f74009e9e8ad989d05c046adcc555aacddf1011a1882e4f390",
+      "mirrorSHA256": "356971de0359f4f74009e9e8ad989d05c046adcc555aacddf1011a1882e4f390",
+      "match": true
+    },
+    {
+      "path": "app.json",
+      "sourceSHA256": "43a9a2d9f5352ddd59d03360898abddfe22c0dd09cc52e3b8089f92104c265f1",
+      "mirrorSHA256": "43a9a2d9f5352ddd59d03360898abddfe22c0dd09cc52e3b8089f92104c265f1",
+      "match": true
+    },
+    {
+      "path": "assets/images/android-icon-foreground.png",
+      "sourceSHA256": "27a8d91f6ae7a4dc36728aa8815ce3f17218313a680a1300238afaab1aecff07",
+      "mirrorSHA256": "27a8d91f6ae7a4dc36728aa8815ce3f17218313a680a1300238afaab1aecff07",
+      "match": true
+    },
+    {
+      "path": "assets/images/android-icon-monochrome.png",
+      "sourceSHA256": "9b8749f0e2709266f491a0c9936cf76ba3ed1311b7dc035682a19c278014683f",
+      "mirrorSHA256": "9b8749f0e2709266f491a0c9936cf76ba3ed1311b7dc035682a19c278014683f",
+      "match": true
+    },
+    {
+      "path": "assets/images/favicon.png",
+      "sourceSHA256": "31e450e6970578779edee286b01bc507a240244e991924b4008d2130a002eac4",
+      "mirrorSHA256": "31e450e6970578779edee286b01bc507a240244e991924b4008d2130a002eac4",
+      "match": true
+    },
+    {
+      "path": "assets/images/icon.png",
+      "sourceSHA256": "5bd2e2865f3663332b46cf416fc4d18e26b1dccdeb2f3031d406f898c7ace442",
+      "mirrorSHA256": "5bd2e2865f3663332b46cf416fc4d18e26b1dccdeb2f3031d406f898c7ace442",
+      "match": true
+    },
+    {
+      "path": "assets/images/splash-icon.png",
+      "sourceSHA256": "112dbe5d3226d18ecf44c85d5b550e93c579885e449b85cad25e13d230027ca8",
+      "mirrorSHA256": "112dbe5d3226d18ecf44c85d5b550e93c579885e449b85cad25e13d230027ca8",
+      "match": true
+    },
+    {
+      "path": "eslint.config.js",
+      "sourceSHA256": "6ea734f0e3f5b7c3c5720b3c467695516b14935724a78386b8534abc2959da12",
+      "mirrorSHA256": "6ea734f0e3f5b7c3c5720b3c467695516b14935724a78386b8534abc2959da12",
+      "match": true
+    },
+    {
+      "path": "expo-env.d.ts",
+      "sourceSHA256": "6fc02634da46d3edc5a88eec9173ba6bf709726be3cba83c73ebd8e859d5c147",
+      "mirrorSHA256": "6fc02634da46d3edc5a88eec9173ba6bf709726be3cba83c73ebd8e859d5c147",
+      "match": true
+    },
+    {
+      "path": "metro.config.js",
+      "sourceSHA256": "c786173dc264a385979bdf69c1cee68b7aabe43876139e069f7516e596b80572",
+      "mirrorSHA256": "c786173dc264a385979bdf69c1cee68b7aabe43876139e069f7516e596b80572",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/android/build.gradle",
+      "sourceSHA256": "3a769c61ce1eafc267f82874d621b6e9548fd9a6192f114c747333fb4a5cdd2f",
+      "mirrorSHA256": "3a769c61ce1eafc267f82874d621b6e9548fd9a6192f114c747333fb4a5cdd2f",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/AndroidManifest.xml",
+      "sourceSHA256": "21058c692532098e42afc39cf09de946c38229ec414bb7ac32f4fc90ba9a5f45",
+      "mirrorSHA256": "21058c692532098e42afc39cf09de946c38229ec414bb7ac32f4fc90ba9a5f45",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/java/expo/modules/smileengine/SmileEngineModule.kt",
+      "sourceSHA256": "9b50fe48b1cc44b50dfccdd5a645fc261b85f35a3503e0212c8c6036960ef645",
+      "mirrorSHA256": "9b50fe48b1cc44b50dfccdd5a645fc261b85f35a3503e0212c8c6036960ef645",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/java/expo/modules/smileengine/SmileExporter.kt",
+      "sourceSHA256": "879bfb3403767cfa022da3097843b7059f1439ad170565c4bd89f931177fc5b4",
+      "mirrorSHA256": "879bfb3403767cfa022da3097843b7059f1439ad170565c4bd89f931177fc5b4",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/expo-module.config.json",
+      "sourceSHA256": "61018999164f3af6e2aadd1125ff92f1833d3a8b7972eb2a13b8d73397be6d70",
+      "mirrorSHA256": "61018999164f3af6e2aadd1125ff92f1833d3a8b7972eb2a13b8d73397be6d70",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/index.tsx",
+      "sourceSHA256": "227622f6bb2f41dcf22036d76f16a5033b011728d817cef5a4ba920e735eccde",
+      "mirrorSHA256": "227622f6bb2f41dcf22036d76f16a5033b011728d817cef5a4ba920e735eccde",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileColorView.swift",
+      "sourceSHA256": "71cf9d10b7d77d4faaef6395c720a84a5d2540522fe0fe1e604375dde99f49f1",
+      "mirrorSHA256": "71cf9d10b7d77d4faaef6395c720a84a5d2540522fe0fe1e604375dde99f49f1",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileEngine.podspec",
+      "sourceSHA256": "50dd8f74155e63246362ef8f171988d812e67614ad7bc788d886b70d79f59565",
+      "mirrorSHA256": "50dd8f74155e63246362ef8f171988d812e67614ad7bc788d886b70d79f59565",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileEngineModule.swift",
+      "sourceSHA256": "5288a666628bc94233356e0b4dc4b62322a5d07ec666c486b3ef39feff330659",
+      "mirrorSHA256": "5288a666628bc94233356e0b4dc4b62322a5d07ec666c486b3ef39feff330659",
+      "match": true
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileExporter.swift",
+      "sourceSHA256": "9079607ba6aa010171874affe156fa3ec3809aa67b824486e603771e4eb70a93",
+      "mirrorSHA256": "9079607ba6aa010171874affe156fa3ec3809aa67b824486e603771e4eb70a93",
+      "match": true
+    },
+    {
+      "path": "package-lock.json",
+      "sourceSHA256": "1cd92f6793b8dcaf98dab28c9b3b5da43affe6d9052543149a68d75223e7ac8f",
+      "mirrorSHA256": "1cd92f6793b8dcaf98dab28c9b3b5da43affe6d9052543149a68d75223e7ac8f",
+      "match": true
+    },
+    {
+      "path": "package.json",
+      "sourceSHA256": "05b3bac5a976ff0967946c6094e52e78b288b517a457b8c1f802a1e6f1e01cd1",
+      "mirrorSHA256": "05b3bac5a976ff0967946c6094e52e78b288b517a457b8c1f802a1e6f1e01cd1",
+      "match": true
+    },
+    {
+      "path": "patches/expo-constants+57.0.21.patch",
+      "sourceSHA256": "98ec7d5bb18a7c6f9f94bf495fdf2b2663d6ab135f711eb06b6b351618659b2b",
+      "mirrorSHA256": "98ec7d5bb18a7c6f9f94bf495fdf2b2663d6ab135f711eb06b6b351618659b2b",
+      "match": true
+    },
+    {
+      "path": "patches/expo-video+57.0.5.patch",
+      "sourceSHA256": "da0e86f81ed3ece9e4f5cd06d87cea33db903ba166605160af353e0dc7d90e80",
+      "mirrorSHA256": "da0e86f81ed3ece9e4f5cd06d87cea33db903ba166605160af353e0dc7d90e80",
+      "match": true
+    },
+    {
+      "path": "plugins/with-space-safe-bundle-script.js",
+      "sourceSHA256": "750a9febe041dea7ca2348fb69a85cd2eb2ce6d5d414f1c3cbcf52e9480300a4",
+      "mirrorSHA256": "750a9febe041dea7ca2348fb69a85cd2eb2ce6d5d414f1c3cbcf52e9480300a4",
+      "match": true
+    },
+    {
+      "path": "src/app/(tabs)/_layout.tsx",
+      "sourceSHA256": "b560722976bac22ffa04e6c9a88f01a8f4e5d423fa070cc4ae4641a1a5efd7e0",
+      "mirrorSHA256": "b560722976bac22ffa04e6c9a88f01a8f4e5d423fa070cc4ae4641a1a5efd7e0",
+      "match": true
+    },
+    {
+      "path": "src/app/(tabs)/index.tsx",
+      "sourceSHA256": "222e1d3357ec93818ce50beb2cc24ce8a1023e18278f10517a8fef06de60f3e7",
+      "mirrorSHA256": "222e1d3357ec93818ce50beb2cc24ce8a1023e18278f10517a8fef06de60f3e7",
+      "match": true
+    },
+    {
+      "path": "src/app/(tabs)/profile.tsx",
+      "sourceSHA256": "6938ef370f44494bd9ded1bed75c0decd3dcabf7e0e4f1fde10aed84aa02a736",
+      "mirrorSHA256": "6938ef370f44494bd9ded1bed75c0decd3dcabf7e0e4f1fde10aed84aa02a736",
+      "match": true
+    },
+    {
+      "path": "src/app/(tabs)/projects.tsx",
+      "sourceSHA256": "1a472421a97293b1483811b0df195e9d9ce57bf2f4c9fe072d5d028cf9ce36c3",
+      "mirrorSHA256": "1a472421a97293b1483811b0df195e9d9ce57bf2f4c9fe072d5d028cf9ce36c3",
+      "match": true
+    },
+    {
+      "path": "src/app/_layout.tsx",
+      "sourceSHA256": "f1b3cfa7bede0d4afa68605af2e6e08520cccfa0359f118416a02ab2a5042d1e",
+      "mirrorSHA256": "f1b3cfa7bede0d4afa68605af2e6e08520cccfa0359f118416a02ab2a5042d1e",
+      "match": true
+    },
+    {
+      "path": "src/app/edit-profile.tsx",
+      "sourceSHA256": "7bb7236d74a20ebf54579ffc75a98a59e5bc7c7ca003f4c71b2e45794c79f8bd",
+      "mirrorSHA256": "7bb7236d74a20ebf54579ffc75a98a59e5bc7c7ca003f4c71b2e45794c79f8bd",
+      "match": true
+    },
+    {
+      "path": "src/app/editor/[id].tsx",
+      "sourceSHA256": "f4d95f935ca50337b483dd66c0cc822b442312140315c33621e436c28e00b907",
+      "mirrorSHA256": "f4d95f935ca50337b483dd66c0cc822b442312140315c33621e436c28e00b907",
+      "match": true
+    },
+    {
+      "path": "src/app/help.tsx",
+      "sourceSHA256": "dd7b3ea93c69b27d15a23d32aa5fd48b3071d276d0d368a35531476e692345ed",
+      "mirrorSHA256": "dd7b3ea93c69b27d15a23d32aa5fd48b3071d276d0d368a35531476e692345ed",
+      "match": true
+    },
+    {
+      "path": "src/app/settings.tsx",
+      "sourceSHA256": "b20f07d6dc198d94eab2e0afd004faa16866f83866b9da381188fb6109e9437a",
+      "mirrorSHA256": "b20f07d6dc198d94eab2e0afd004faa16866f83866b9da381188fb6109e9437a",
+      "match": true
+    },
+    {
+      "path": "src/app/sign-in.tsx",
+      "sourceSHA256": "8ed3098b687dd6569dfd54fb00664e7a066739c06110db5557db97815891e192",
+      "mirrorSHA256": "8ed3098b687dd6569dfd54fb00664e7a066739c06110db5557db97815891e192",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-analysis.test.ts",
+      "sourceSHA256": "fc97807264eecb4a26683e6d6fa07ffc7d3894a5e17a64de38e9f7bdf65539ae",
+      "mirrorSHA256": "fc97807264eecb4a26683e6d6fa07ffc7d3894a5e17a64de38e9f7bdf65539ae",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-analysis.ts",
+      "sourceSHA256": "f6a7cacaabfc8e60d45fa84666ad90e41a9694ed5d06a6e92af276e3d1a670d3",
+      "mirrorSHA256": "f6a7cacaabfc8e60d45fa84666ad90e41a9694ed5d06a6e92af276e3d1a670d3",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-editing.test.ts",
+      "sourceSHA256": "c7c7589c7244b4ca9e5eaffd1c19a1cca1041d103dd9f0b331e2f25c44a73333",
+      "mirrorSHA256": "c7c7589c7244b4ca9e5eaffd1c19a1cca1041d103dd9f0b331e2f25c44a73333",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-editing.ts",
+      "sourceSHA256": "281f90a97908b7a077f98177fa2598335185566d9be8ec8abb65a010f03d6479",
+      "mirrorSHA256": "281f90a97908b7a077f98177fa2598335185566d9be8ec8abb65a010f03d6479",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-pool.test.ts",
+      "sourceSHA256": "fa27c89d6973001bd60fbc817440affc4926640ded5881cd59def8aad7664634",
+      "mirrorSHA256": "fa27c89d6973001bd60fbc817440affc4926640ded5881cd59def8aad7664634",
+      "match": true
+    },
+    {
+      "path": "src/core/audio-pool.ts",
+      "sourceSHA256": "8b18250b4ea5d7a7ae74e48e661a90b995988a3673c4e92aef0f4ea6c19f65f8",
+      "mirrorSHA256": "8b18250b4ea5d7a7ae74e48e661a90b995988a3673c4e92aef0f4ea6c19f65f8",
+      "match": true
+    },
+    {
+      "path": "src/core/captions.test.ts",
+      "sourceSHA256": "187e1e1af0e940414ea56aff0b8ddac9ad99b16df6a3bc9fadf618fb3893c190",
+      "mirrorSHA256": "187e1e1af0e940414ea56aff0b8ddac9ad99b16df6a3bc9fadf618fb3893c190",
+      "match": true
+    },
+    {
+      "path": "src/core/captions.ts",
+      "sourceSHA256": "70833b399ef65aab4591b9635493629de10c07a235f45cf39a14c83aad5736e8",
+      "mirrorSHA256": "70833b399ef65aab4591b9635493629de10c07a235f45cf39a14c83aad5736e8",
+      "match": true
+    },
+    {
+      "path": "src/core/color.test.ts",
+      "sourceSHA256": "78d852c2eb55f4a72a3c3527e3f90f7d39b901fe3c191b04229190197799f2e8",
+      "mirrorSHA256": "78d852c2eb55f4a72a3c3527e3f90f7d39b901fe3c191b04229190197799f2e8",
+      "match": true
+    },
+    {
+      "path": "src/core/color.ts",
+      "sourceSHA256": "5017f33483832838ba7be02eac29ddb2d14554e0a8b654a8a11e61744fe307c6",
+      "mirrorSHA256": "5017f33483832838ba7be02eac29ddb2d14554e0a8b654a8a11e61744fe307c6",
+      "match": true
+    },
+    {
+      "path": "src/core/drafts.test.ts",
+      "sourceSHA256": "9c961b6c1a6badaeb8e43d3f87a217a7d8c245bc0c6fadb2a10924de17e95446",
+      "mirrorSHA256": "9c961b6c1a6badaeb8e43d3f87a217a7d8c245bc0c6fadb2a10924de17e95446",
+      "match": true
+    },
+    {
+      "path": "src/core/drafts.ts",
+      "sourceSHA256": "96abf0392c94d5031a3b5bd1e0f343bcd124ffbc7a59986585ac94ed75b5983b",
+      "mirrorSHA256": "96abf0392c94d5031a3b5bd1e0f343bcd124ffbc7a59986585ac94ed75b5983b",
+      "match": true
+    },
+    {
+      "path": "src/core/editing.test.ts",
+      "sourceSHA256": "ce8f2a8cb748b991df679b14e6b9a0d7c1369dfc3cd0258193cf2336b899eae9",
+      "mirrorSHA256": "ce8f2a8cb748b991df679b14e6b9a0d7c1369dfc3cd0258193cf2336b899eae9",
+      "match": true
+    },
+    {
+      "path": "src/core/editing.ts",
+      "sourceSHA256": "35b5c0280291a98414b4ab453153f14917d995b355b98b64402fcfb80271dd46",
+      "mirrorSHA256": "35b5c0280291a98414b4ab453153f14917d995b355b98b64402fcfb80271dd46",
+      "match": true
+    },
+    {
+      "path": "src/core/effects.test.ts",
+      "sourceSHA256": "34e099c87dad2ecddeb4d8b3346965317ea0e0cafc7977513aac7e73e251b6aa",
+      "mirrorSHA256": "34e099c87dad2ecddeb4d8b3346965317ea0e0cafc7977513aac7e73e251b6aa",
+      "match": true
+    },
+    {
+      "path": "src/core/effects.ts",
+      "sourceSHA256": "626d944d04a4700bc9cc7ca57614b39473184c629ce182ba6aa770ea20c1c859",
+      "mirrorSHA256": "626d944d04a4700bc9cc7ca57614b39473184c629ce182ba6aa770ea20c1c859",
+      "match": true
+    },
+    {
+      "path": "src/core/export.test.ts",
+      "sourceSHA256": "6dc0fd994fe2b95c0d31cae64b22ddf9c74e3c1cb2edcfd7c11a15dc4efbc838",
+      "mirrorSHA256": "6dc0fd994fe2b95c0d31cae64b22ddf9c74e3c1cb2edcfd7c11a15dc4efbc838",
+      "match": true
+    },
+    {
+      "path": "src/core/export.ts",
+      "sourceSHA256": "9846ec1b4f2926eaad594c2317bd06b1e03e35cdd8e3a88a16373ea1cf8b2a55",
+      "mirrorSHA256": "9846ec1b4f2926eaad594c2317bd06b1e03e35cdd8e3a88a16373ea1cf8b2a55",
+      "match": true
+    },
+    {
+      "path": "src/core/preferences.test.ts",
+      "sourceSHA256": "6ca86ef72350b6e75be52b5694a2565df55037130a28bb454b486567ecb0ab17",
+      "mirrorSHA256": "6ca86ef72350b6e75be52b5694a2565df55037130a28bb454b486567ecb0ab17",
+      "match": true
+    },
+    {
+      "path": "src/core/preferences.ts",
+      "sourceSHA256": "4ea80eb1fc55b544561636ad0a28520396e9f75fa41b97db0afd9e16d2e55ddd",
+      "mirrorSHA256": "4ea80eb1fc55b544561636ad0a28520396e9f75fa41b97db0afd9e16d2e55ddd",
+      "match": true
+    },
+    {
+      "path": "src/core/quick-edit.test.ts",
+      "sourceSHA256": "50c5141556cdada8ce9e8a7abc49b2d5206a54f0df3f62ac4e8921cd15a2c2cb",
+      "mirrorSHA256": "50c5141556cdada8ce9e8a7abc49b2d5206a54f0df3f62ac4e8921cd15a2c2cb",
+      "match": true
+    },
+    {
+      "path": "src/core/quick-edit.ts",
+      "sourceSHA256": "ccfb90b4a5a7cb7c122f5661a36a3377d8883534186bfeba96025f526d946758",
+      "mirrorSHA256": "ccfb90b4a5a7cb7c122f5661a36a3377d8883534186bfeba96025f526d946758",
+      "match": true
+    },
+    {
+      "path": "src/core/sounds.test.ts",
+      "sourceSHA256": "67e113f3706d034ad48b4288286e4389c0060aca812a71477a8903ae2852ab20",
+      "mirrorSHA256": "67e113f3706d034ad48b4288286e4389c0060aca812a71477a8903ae2852ab20",
+      "match": true
+    },
+    {
+      "path": "src/core/sounds.ts",
+      "sourceSHA256": "ac757dd0e0df1e386fd5f2b00c738f04abff2dfbd2e33891ea1e43946a68258d",
+      "mirrorSHA256": "ac757dd0e0df1e386fd5f2b00c738f04abff2dfbd2e33891ea1e43946a68258d",
+      "match": true
+    },
+    {
+      "path": "src/core/templates.ts",
+      "sourceSHA256": "e1c8d52a3bd17174124e2efb6275b27370ab5031f9a9e1f568ff95612a421817",
+      "mirrorSHA256": "e1c8d52a3bd17174124e2efb6275b27370ab5031f9a9e1f568ff95612a421817",
+      "match": true
+    },
+    {
+      "path": "src/core/timeline.test.ts",
+      "sourceSHA256": "beefab568a73eed825c6cf43de4247d92ce542969a3ba5fa8641d77740118ea2",
+      "mirrorSHA256": "beefab568a73eed825c6cf43de4247d92ce542969a3ba5fa8641d77740118ea2",
+      "match": true
+    },
+    {
+      "path": "src/core/timeline.ts",
+      "sourceSHA256": "c16322d15cf975f597f413c3ed33c95474342453f8385ef36eaf4e0de9331d9d",
+      "mirrorSHA256": "c16322d15cf975f597f413c3ed33c95474342453f8385ef36eaf4e0de9331d9d",
+      "match": true
+    },
+    {
+      "path": "src/core/types.ts",
+      "sourceSHA256": "d6ddbc7544c626aa49edb0c368e038e5d2d592f7697cae71f84fe9513c6bf2c7",
+      "mirrorSHA256": "d6ddbc7544c626aa49edb0c368e038e5d2d592f7697cae71f84fe9513c6bf2c7",
+      "match": true
+    },
+    {
+      "path": "src/editor/AudioToolsPanel.tsx",
+      "sourceSHA256": "44d85cd1b1dd0967195dd43b0009fd8d051405d9fc81840d3e5c9a0d31a5530b",
+      "mirrorSHA256": "44d85cd1b1dd0967195dd43b0009fd8d051405d9fc81840d3e5c9a0d31a5530b",
+      "match": true
+    },
+    {
+      "path": "src/editor/CaptionsPanel.tsx",
+      "sourceSHA256": "bd061add6546ddb19866dd49c6aa30611a1504b776a1fe28851c776845cbcecf",
+      "mirrorSHA256": "bd061add6546ddb19866dd49c6aa30611a1504b776a1fe28851c776845cbcecf",
+      "match": true
+    },
+    {
+      "path": "src/editor/EffectsOverlay.tsx",
+      "sourceSHA256": "1e64e45d49e905c1831e013d028ac83d34383b00c8749a7e6fdde1a3315430a4",
+      "mirrorSHA256": "1e64e45d49e905c1831e013d028ac83d34383b00c8749a7e6fdde1a3315430a4",
+      "match": true
+    },
+    {
+      "path": "src/editor/EffectsPanel.tsx",
+      "sourceSHA256": "7f2cc5a1aabd55262bb32aa3b901bfe252753b1a19e8d6cf2201d605d965d4bf",
+      "mirrorSHA256": "7f2cc5a1aabd55262bb32aa3b901bfe252753b1a19e8d6cf2201d605d965d4bf",
+      "match": true
+    },
+    {
+      "path": "src/editor/ExportFlow.tsx",
+      "sourceSHA256": "9e5467221e5405f77eec501469096ab95b2ee86bd2089bebebe322961318a692",
+      "mirrorSHA256": "9e5467221e5405f77eec501469096ab95b2ee86bd2089bebebe322961318a692",
+      "match": true
+    },
+    {
+      "path": "src/editor/Preview.tsx",
+      "sourceSHA256": "fcaa085391784ce3990121b2f1094344424b8992d2bfe3488d60e851601d075a",
+      "mirrorSHA256": "fcaa085391784ce3990121b2f1094344424b8992d2bfe3488d60e851601d075a",
+      "match": true
+    },
+    {
+      "path": "src/editor/SoundLibraryPanel.tsx",
+      "sourceSHA256": "023870072d92d9eb9187055316d7006ebcc59bd598cc80c0e09402e31c4e1fca",
+      "mirrorSHA256": "023870072d92d9eb9187055316d7006ebcc59bd598cc80c0e09402e31c4e1fca",
+      "match": true
+    },
+    {
+      "path": "src/editor/StickersPanel.tsx",
+      "sourceSHA256": "7e8104f121253193828f872a288d865564ab3e5d012a9a0bac215f447d23a447",
+      "mirrorSHA256": "7e8104f121253193828f872a288d865564ab3e5d012a9a0bac215f447d23a447",
+      "match": true
+    },
+    {
+      "path": "src/editor/TemplatesPanel.tsx",
+      "sourceSHA256": "0fe8d99c27fe70e843912c0354a027ba4011d9bb6a10f0ce606c43431967fdb1",
+      "mirrorSHA256": "0fe8d99c27fe70e843912c0354a027ba4011d9bb6a10f0ce606c43431967fdb1",
+      "match": true
+    },
+    {
+      "path": "src/editor/Timeline.tsx",
+      "sourceSHA256": "1e54b281a24bdc52c757341dd35d75c28c29ce31996a707d0af938f816b0b709",
+      "mirrorSHA256": "1e54b281a24bdc52c757341dd35d75c28c29ce31996a707d0af938f816b0b709",
+      "match": true
+    },
+    {
+      "path": "src/editor/TimingPanel.tsx",
+      "sourceSHA256": "dc870cd0f82eb49a3be198bd9810672716a37fcd3adbb35d43123096b8a75180",
+      "mirrorSHA256": "dc870cd0f82eb49a3be198bd9810672716a37fcd3adbb35d43123096b8a75180",
+      "match": true
+    },
+    {
+      "path": "src/editor/ToolLibrary.tsx",
+      "sourceSHA256": "29ed5144ce177197d553dd4850365080bec2f02bf92507f457eea644422d09e8",
+      "mirrorSHA256": "29ed5144ce177197d553dd4850365080bec2f02bf92507f457eea644422d09e8",
+      "match": true
+    },
+    {
+      "path": "src/editor/Toolbar.tsx",
+      "sourceSHA256": "1661f5f029191e696e48d5f1460d6888d44c944b2d1858c426428ff491974d21",
+      "mirrorSHA256": "1661f5f029191e696e48d5f1460d6888d44c944b2d1858c426428ff491974d21",
+      "match": true
+    },
+    {
+      "path": "src/editor/still.ts",
+      "sourceSHA256": "b6e81e26f4071fad5966b7e539e17646eec98512fc3cc8a2f391adca073ce934",
+      "mirrorSHA256": "b6e81e26f4071fad5966b7e539e17646eec98512fc3cc8a2f391adca073ce934",
+      "match": true
+    },
+    {
+      "path": "src/editor/text-presets.ts",
+      "sourceSHA256": "c48dd0596728d4c1d09615c5cae082fbdbbc7739e4c5b1427b9bd22c7ab6b5bf",
+      "mirrorSHA256": "c48dd0596728d4c1d09615c5cae082fbdbbc7739e4c5b1427b9bd22c7ab6b5bf",
+      "match": true
+    },
+    {
+      "path": "src/playback/engine.ts",
+      "sourceSHA256": "614d315bf996d5074804f25f0c1140c75a4856f616abdcd0f28be4cd5563fe37",
+      "mirrorSHA256": "614d315bf996d5074804f25f0c1140c75a4856f616abdcd0f28be4cd5563fe37",
+      "match": true
+    },
+    {
+      "path": "src/playback/player-utils.ts",
+      "sourceSHA256": "d1597951f33fe7c4fa8773fb983f1c0d035e224126f023eb75827e75aefa3539",
+      "mirrorSHA256": "d1597951f33fe7c4fa8773fb983f1c0d035e224126f023eb75827e75aefa3539",
+      "match": true
+    },
+    {
+      "path": "src/playback/thumbnails.ts",
+      "sourceSHA256": "be02b7d62f6301d4325250490b51faee0062aedf7f592789ad736f8e2bb6900e",
+      "mirrorSHA256": "be02b7d62f6301d4325250490b51faee0062aedf7f592789ad736f8e2bb6900e",
+      "match": true
+    },
+    {
+      "path": "src/playback/voiceover-session.test.ts",
+      "sourceSHA256": "728e1ac094ae8118b45167c1e630ec70a441e5e9b9e5c7a8e286c9d350154ce7",
+      "mirrorSHA256": "728e1ac094ae8118b45167c1e630ec70a441e5e9b9e5c7a8e286c9d350154ce7",
+      "match": true
+    },
+    {
+      "path": "src/playback/voiceover-session.ts",
+      "sourceSHA256": "cf29d6eedfbede0c49f6ed950d4f5300c8dda1779cf07b123ec27b723fa3da34",
+      "mirrorSHA256": "cf29d6eedfbede0c49f6ed950d4f5300c8dda1779cf07b123ec27b723fa3da34",
+      "match": true
+    },
+    {
+      "path": "src/playback/waveforms.ts",
+      "sourceSHA256": "42673ddfabe379e81ae4a4bebf92e0ed04ac0e84cb1d0a9ac6b8ffd8d7cba245",
+      "mirrorSHA256": "42673ddfabe379e81ae4a4bebf92e0ed04ac0e84cb1d0a9ac6b8ffd8d7cba245",
+      "match": true
+    },
+    {
+      "path": "src/state/editor.ts",
+      "sourceSHA256": "2a9f9237d5002aa10aa130ee5ba06fd059dd974b0a92a698c7037e39bddadc1a",
+      "mirrorSHA256": "2a9f9237d5002aa10aa130ee5ba06fd059dd974b0a92a698c7037e39bddadc1a",
+      "match": true
+    },
+    {
+      "path": "src/state/import.ts",
+      "sourceSHA256": "9c4f498b54da3430a412ed46b0286b6b4e0b5ed54ddd65939218ad3af3396947",
+      "mirrorSHA256": "9c4f498b54da3430a412ed46b0286b6b4e0b5ed54ddd65939218ad3af3396947",
+      "match": true
+    },
+    {
+      "path": "src/state/preferences.ts",
+      "sourceSHA256": "ab79ef67594be942bf03234c22fd1b610821b3381d3fe034e392b9170dc0f8ce",
+      "mirrorSHA256": "ab79ef67594be942bf03234c22fd1b610821b3381d3fe034e392b9170dc0f8ce",
+      "match": true
+    },
+    {
+      "path": "src/storage/captions.ts",
+      "sourceSHA256": "bc1b2f8899d735f35ef378e06e9e250b56545ffc8c17231454361d2a76998006",
+      "mirrorSHA256": "bc1b2f8899d735f35ef378e06e9e250b56545ffc8c17231454361d2a76998006",
+      "match": true
+    },
+    {
+      "path": "src/storage/media.ts",
+      "sourceSHA256": "c711fb8d18ae6a61531b2f69c4e39a8afa2f70104dae139ddf007624fdfb1396",
+      "mirrorSHA256": "c711fb8d18ae6a61531b2f69c4e39a8afa2f70104dae139ddf007624fdfb1396",
+      "match": true
+    },
+    {
+      "path": "src/storage/projects.ts",
+      "sourceSHA256": "2e355e1e3dd1811a8e65f273fceb5dab551be58bb136ca84362cd294043513cd",
+      "mirrorSHA256": "2e355e1e3dd1811a8e65f273fceb5dab551be58bb136ca84362cd294043513cd",
+      "match": true
+    },
+    {
+      "path": "src/storage/sounds.ts",
+      "sourceSHA256": "ccf2591184ac243829ed1f1809b00cda54cada0453c4869370b0304c79482ce3",
+      "mirrorSHA256": "ccf2591184ac243829ed1f1809b00cda54cada0453c4869370b0304c79482ce3",
+      "match": true
+    },
+    {
+      "path": "src/studio/ProjectLibrary.tsx",
+      "sourceSHA256": "7ccac57782be3e71910f81c3652592b7973d08cf5a8964d562a320c526104c2b",
+      "mirrorSHA256": "7ccac57782be3e71910f81c3652592b7973d08cf5a8964d562a320c526104c2b",
+      "match": true
+    },
+    {
+      "path": "src/studio/StudioHomeHeader.tsx",
+      "sourceSHA256": "b23bde0bc2f1be2e3a067f1bee7a12dd8342415614e80b7f8fb13a6f4155e8f9",
+      "mirrorSHA256": "b23bde0bc2f1be2e3a067f1bee7a12dd8342415614e80b7f8fb13a6f4155e8f9",
+      "match": true
+    },
+    {
+      "path": "src/studio/StylePreview.tsx",
+      "sourceSHA256": "2944dd0f56a973d241935245202c56052e1e33629ba6a8f4a5a700c49e10c2c8",
+      "mirrorSHA256": "2944dd0f56a973d241935245202c56052e1e33629ba6a8f4a5a700c49e10c2c8",
+      "match": true
+    },
+    {
+      "path": "src/studio/useCreateProject.tsx",
+      "sourceSHA256": "a2a4e05c589d94dd32e0f6707a9495f7574ce1bbac6f58ce3cf8e2fe81353f9f",
+      "mirrorSHA256": "a2a4e05c589d94dd32e0f6707a9495f7574ce1bbac6f58ce3cf8e2fe81353f9f",
+      "match": true
+    },
+    {
+      "path": "src/ui/Logo.tsx",
+      "sourceSHA256": "f6acdb3694e2accd15de4bc39ecfb011c23c72bca3c1ac2b928c173f9290356b",
+      "mirrorSHA256": "f6acdb3694e2accd15de4bc39ecfb011c23c72bca3c1ac2b928c173f9290356b",
+      "match": true
+    },
+    {
+      "path": "src/ui/MotionPressable.tsx",
+      "sourceSHA256": "8c22978d3b51022934a1d481044216670f49b4a3edfbd4cb4d143014fa3b7337",
+      "mirrorSHA256": "8c22978d3b51022934a1d481044216670f49b4a3edfbd4cb4d143014fa3b7337",
+      "match": true
+    },
+    {
+      "path": "src/ui/PromptDialog.tsx",
+      "sourceSHA256": "740c212060d9ae2f44bced407a73b46891c1db41708cf17b7d8ee8bead915e45",
+      "mirrorSHA256": "740c212060d9ae2f44bced407a73b46891c1db41708cf17b7d8ee8bead915e45",
+      "match": true
+    },
+    {
+      "path": "src/ui/Screen.tsx",
+      "sourceSHA256": "f6faa8522e97a428f679eda7464d2da9be232bdd02f31fd33165fc562526f5a2",
+      "mirrorSHA256": "f6faa8522e97a428f679eda7464d2da9be232bdd02f31fd33165fc562526f5a2",
+      "match": true
+    },
+    {
+      "path": "src/ui/Sheet.tsx",
+      "sourceSHA256": "eba6fc2a4feb0995a7047eb62323697e496c6ab3fe9dc47ea9ad2f58d836319b",
+      "mirrorSHA256": "eba6fc2a4feb0995a7047eb62323697e496c6ab3fe9dc47ea9ad2f58d836319b",
+      "match": true
+    },
+    {
+      "path": "src/ui/Slider.tsx",
+      "sourceSHA256": "445f34e4d782eb8aa2233bdf81019b0b110e725683eace9cfc7dabb48f8ecff3",
+      "mirrorSHA256": "445f34e4d782eb8aa2233bdf81019b0b110e725683eace9cfc7dabb48f8ecff3",
+      "match": true
+    },
+    {
+      "path": "src/ui/StudioIcon.tsx",
+      "sourceSHA256": "4e77ae0fc1cd30665d6ef56e625315a85b31892a6248b8eee13a8344ddddb72b",
+      "mirrorSHA256": "4e77ae0fc1cd30665d6ef56e625315a85b31892a6248b8eee13a8344ddddb72b",
+      "match": true
+    },
+    {
+      "path": "src/ui/fonts.ts",
+      "sourceSHA256": "7dfbf7043d6ab02d89dc78244c4adbe5b772ffe8f3648f7965efcf4036fb6d85",
+      "mirrorSHA256": "7dfbf7043d6ab02d89dc78244c4adbe5b772ffe8f3648f7965efcf4036fb6d85",
+      "match": true
+    },
+    {
+      "path": "src/ui/motion.tsx",
+      "sourceSHA256": "97cda7c489977ab76adce094af87465f8fd88b1522e26dfeedaa2d44041b61dc",
+      "mirrorSHA256": "97cda7c489977ab76adce094af87465f8fd88b1522e26dfeedaa2d44041b61dc",
+      "match": true
+    },
+    {
+      "path": "src/ui/studio-glyphs.ts",
+      "sourceSHA256": "f5bbbde9d7df0a7e7c2f9367932862b271c64be130b21e7d2fcdb1b388c92357",
+      "mirrorSHA256": "f5bbbde9d7df0a7e7c2f9367932862b271c64be130b21e7d2fcdb1b388c92357",
+      "match": true
+    },
+    {
+      "path": "src/ui/theme.ts",
+      "sourceSHA256": "4f719512b2e96523b74d6e24cf4480171a3a5f64d0d4fba7142f1915ff9b962d",
+      "mirrorSHA256": "4f719512b2e96523b74d6e24cf4480171a3a5f64d0d4fba7142f1915ff9b962d",
+      "match": true
+    },
+    {
+      "path": "src/ui/useImport.tsx",
+      "sourceSHA256": "d24875af585daca7d0f336b759d9143d212bf7e7b1ec99334d3fedc747104884",
+      "mirrorSHA256": "d24875af585daca7d0f336b759d9143d212bf7e7b1ec99334d3fedc747104884",
+      "match": true
+    },
+    {
+      "path": "src/ui/useKeyboardSpace.ts",
+      "sourceSHA256": "0cc50e8ef4a16725c0b44db414d1cdcf576672d9e4029079045d512a29ef334b",
+      "mirrorSHA256": "0cc50e8ef4a16725c0b44db414d1cdcf576672d9e4029079045d512a29ef334b",
+      "match": true
+    },
+    {
+      "path": "tsconfig.json",
+      "sourceSHA256": "3f9f757aa77e7624826ca8b67fe7068b712e97b810ebed622759a63fe61f0850",
+      "mirrorSHA256": "3f9f757aa77e7624826ca8b67fe7068b712e97b810ebed622759a63fe61f0850",
+      "match": true
+    }
+  ]
+}

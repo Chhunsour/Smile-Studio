@@ -1,0 +1,47 @@
+{
+  "method": "WCAG relative luminance contrast for representative normal text pairs. Does not imply whole-app accessibility certification.",
+  "pairs": [
+    {
+      "label": "Dark primary text",
+      "fg": "#F4F3EF",
+      "bg": "#191B1E",
+      "ratio": 15.54,
+      "meetsNormalTextAA": true
+    },
+    {
+      "label": "Dark secondary text",
+      "fg": "#B1B7BD",
+      "bg": "#191B1E",
+      "ratio": 8.53,
+      "meetsNormalTextAA": true
+    },
+    {
+      "label": "Dark active label",
+      "fg": "#F4CF75",
+      "bg": "#383123",
+      "ratio": 8.6,
+      "meetsNormalTextAA": true
+    },
+    {
+      "label": "Light primary text",
+      "fg": "#242924",
+      "bg": "#FFFFFF",
+      "ratio": 14.81,
+      "meetsNormalTextAA": true
+    },
+    {
+      "label": "Light secondary text",
+      "fg": "#60695F",
+      "bg": "#FFFFFF",
+      "ratio": 5.7,
+      "meetsNormalTextAA": true
+    },
+    {
+      "label": "Light active label",
+      "fg": "#80601C",
+      "bg": "#FBF0D4",
+      "ratio": 5.13,
+      "meetsNormalTextAA": true
+    }
+  ]
+}

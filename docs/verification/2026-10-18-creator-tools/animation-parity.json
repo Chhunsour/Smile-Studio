@@ -1,0 +1,125 @@
+{
+  "verificationDate": "2026-10-18",
+  "result": "passed",
+  "scope": "Pure text animation functions extracted from the preview timeline and both native exporters. Full app builds and rendered export checks are separate verification gates.",
+  "reference": {
+    "source": "src/core/timeline.ts",
+    "functions": [
+      "animPhase",
+      "textAnimAt"
+    ],
+    "animationFunctionsSha256": "e1954a80ed4d23042a205153336004c1a874e22206d2813ee7ebf1e17bd5030e",
+    "nodeVersion": "24.18.0"
+  },
+  "coverage": {
+    "animations": [
+      "none",
+      "fade",
+      "slide",
+      "slideDown",
+      "pop",
+      "bounce",
+      "zoomIn",
+      "zoomOut",
+      "rise",
+      "pulse"
+    ],
+    "progressSamples": [
+      -0.2,
+      0,
+      0.05,
+      0.1,
+      0.25,
+      0.36363636363636365,
+      0.5454545454545454,
+      0.75,
+      0.9,
+      1,
+      1.2
+    ],
+    "directions": [
+      1,
+      -1
+    ],
+    "samplesPerPlatform": 220,
+    "comparedFields": [
+      "alpha",
+      "scale",
+      "dy"
+    ],
+    "numericComparisonsPerPlatform": 660,
+    "absoluteErrorThreshold": 1e-12,
+    "assertion": "Math.abs(nativeValue - javascriptValue) < 1e-12",
+    "allComparisonsPassed": true
+  },
+  "javascriptEvaluation": {
+    "overlay": {
+      "start": 0,
+      "end": 4
+    },
+    "entrance": "textAnimAt({ start: 0, end: 4, animIn: kind }, progress * 0.5)",
+    "exit": "textAnimAt({ start: 0, end: 4, animOut: kind }, 4 - progress * 0.5)"
+  },
+  "swift": {
+    "result": "passed",
+    "samples": 220,
+    "source": "modules/smile-engine/ios/SmileExporter.swift",
+    "function": "TextLayer.animPhase",
+    "functionSha256": "7bfa49e005fee800d0065e0c569a222559091123dd947e649625a8c7bf63cbdc",
+    "extraction": "Exact function body extracted with brace balancing and wrapped in a standalone struct with Foundation.",
+    "compilerVersionOutput": "swift-driver version: 1.148.6 Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\nTarget: arm64-apple-macosx28.0",
+    "compilerInvocation": {
+      "executable": "/usr/bin/swift",
+      "arguments": [
+        "-e",
+        "import Foundation\nstruct Motion {\nstatic func animPhase(_ kind: String, _ p: Double, _ dir: Double, _ s: inout (alpha: Double, scale: Double, dy: Double)) {\n    if kind == \"none\" || kind.isEmpty || p >= 1 { return }\n    let q = max(0, p)\n    let k = 1 - (1 - q) * (1 - q) * (1 - q)\n    s.alpha *= k\n    if kind == \"slide\" { s.dy += dir * (1 - k) * 0.06 }\n    if kind == \"slideDown\" { s.dy -= dir * (1 - k) * 0.06 }\n    if kind == \"pop\" {\n      let b = 1 + 2.70158 * (q - 1) * (q - 1) * (q - 1) + 1.70158 * (q - 1) * (q - 1)\n      s.scale *= 0.4 + 0.6 * b\n    }\n    if kind == \"bounce\" {\n      var progress = q\n      let bounce: Double\n      if progress < 1 / 2.75 {\n        bounce = 7.5625 * progress * progress\n      } else if progress < 2 / 2.75 {\n        progress -= 1.5 / 2.75\n        bounce = 7.5625 * progress * progress + 0.75\n      } else if progress < 2.5 / 2.75 {\n        progress -= 2.25 / 2.75\n        bounce = 7.5625 * progress * progress + 0.9375\n      } else {\n        progress -= 2.625 / 2.75\n        bounce = 7.5625 * progress * progress + 0.984375\n      }\n      s.scale *= 0.55 + 0.45 * bounce\n      s.dy += dir * (1 - bounce) * 0.045\n    }\n    if kind == \"zoomIn\" { s.scale *= 0.6 + 0.4 * k }\n    if kind == \"zoomOut\" { s.scale *= 1.5 - 0.5 * k }\n    if kind == \"rise\" {\n      s.dy += dir * (1 - q) * 0.1\n      s.scale *= 0.94 + 0.06 * k\n    }\n    if kind == \"pulse\" { s.scale *= 1 + 0.18 * (1 - q) * sin(q * .pi * 3) }\n  }\n}\nlet kinds: [String] = [\"none\",\"fade\",\"slide\",\"slideDown\",\"pop\",\"bounce\",\"zoomIn\",\"zoomOut\",\"rise\",\"pulse\"]\nlet samples: [Double] = [-0.2,0,0.05,0.1,0.25,0.36363636363636365,0.5454545454545454,0.75,0.9,1,1.2]\nfor kind in kinds {\n  for progress in samples {\n    for direction in [1.0, -1.0] {\n      var state = (alpha: 1.0, scale: 1.0, dy: 0.0)\n      Motion.animPhase(kind, progress, direction, &state)\n      print(\"\\(kind)|\\(progress)|\\(direction)|\\(state.alpha)|\\(state.scale)|\\(state.dy)\")\n    }\n  }\n}"
+      ]
+    },
+    "observedOutput": "Swift export math matches JavaScript in 220 animation samples."
+  },
+  "kotlin": {
+    "result": "passed",
+    "samples": 220,
+    "source": "modules/smile-engine/android/src/main/java/expo/modules/smileengine/SmileExporter.kt",
+    "function": "textAnimAt",
+    "functionSha256": "ace1b740435cc2660952cfc627741c785b1a638f9535d0379677b28b24b9ea61",
+    "extraction": "Exact function body extracted with brace balancing and wrapped with the same numeric AnimState and ExportText fields.",
+    "compilerVersionOutput": "info: kotlinc-jvm 1.9.24 (JRE 17.0.20+0)",
+    "javaVersionOutput": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment Homebrew (build 17.0.20+0)\nOpenJDK 64-Bit Server VM Homebrew (build 17.0.20+0, mixed mode, sharing)",
+    "standaloneProgram": "import kotlin.math.max\nimport kotlin.math.sin\nprivate class AnimState(var alpha: Double = 1.0, var scale: Double = 1.0, var dy: Double = 0.0)\nprivate class ExportText(val start: Double, val end: Double, val animIn: String, val animOut: String, val animDuration: Double)\nprivate fun textAnimAt(t: ExportText, time: Double): AnimState {\n  val s = AnimState()\n  fun phase(kind: String, p: Double, dir: Double) {\n    if (kind == \"none\" || kind.isEmpty() || p >= 1) return\n    val q = max(0.0, p)\n    val k = 1 - (1 - q) * (1 - q) * (1 - q)\n    s.alpha *= k\n    if (kind == \"slide\") s.dy += dir * (1 - k) * 0.06\n    if (kind == \"slideDown\") s.dy -= dir * (1 - k) * 0.06\n    if (kind == \"pop\") {\n      val b = 1 + 2.70158 * (q - 1) * (q - 1) * (q - 1) + 1.70158 * (q - 1) * (q - 1)\n      s.scale *= 0.4 + 0.6 * b\n    }\n    if (kind == \"bounce\") {\n      var progress = q\n      val bounce: Double\n      if (progress < 1 / 2.75) {\n        bounce = 7.5625 * progress * progress\n      } else if (progress < 2 / 2.75) {\n        progress -= 1.5 / 2.75\n        bounce = 7.5625 * progress * progress + 0.75\n      } else if (progress < 2.5 / 2.75) {\n        progress -= 2.25 / 2.75\n        bounce = 7.5625 * progress * progress + 0.9375\n      } else {\n        progress -= 2.625 / 2.75\n        bounce = 7.5625 * progress * progress + 0.984375\n      }\n      s.scale *= 0.55 + 0.45 * bounce\n      s.dy += dir * (1 - bounce) * 0.045\n    }\n    if (kind == \"zoomIn\") s.scale *= 0.6 + 0.4 * k\n    if (kind == \"zoomOut\") s.scale *= 1.5 - 0.5 * k\n    if (kind == \"rise\") {\n      s.dy += dir * (1 - q) * 0.1\n      s.scale *= 0.94 + 0.06 * k\n    }\n    if (kind == \"pulse\") s.scale *= 1 + 0.18 * (1 - q) * sin(q * Math.PI * 3)\n  }\n  if (t.animDuration <= 0) return s\n  phase(t.animIn, (time - t.start) / t.animDuration, 1.0)\n  phase(t.animOut, (t.end - time) / t.animDuration, -1.0)\n  return s\n}\nfun main() {\n  val kinds = listOf(\"none\", \"fade\", \"slide\", \"slideDown\", \"pop\", \"bounce\", \"zoomIn\", \"zoomOut\", \"rise\", \"pulse\")\n  val samples = listOf(-0.2, 0.0, 0.05, 0.1, 0.25, 1 / 2.75, 1.5 / 2.75, 0.75, 0.9, 1.0, 1.2)\n  for (kind in kinds) {\n    for (progress in samples) {\n      for (direction in listOf(1.0, -1.0)) {\n        val overlay = ExportText(0.0, 4.0, if (direction > 0) kind else \"none\", if (direction < 0) kind else \"none\", 0.5)\n        val state = textAnimAt(overlay, if (direction > 0) progress * 0.5 else 4 - progress * 0.5)\n        println(\"$kind|$progress|$direction|${state.alpha}|${state.scale}|${state.dy}\")\n      }\n    }\n  }\n}\n\n",
+    "compilerClasspath": [
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.24/78dab849090e6c5e2eadb6e59a11cdc28fb67a08/kotlin-compiler-embeddable-1.9.24.jar",
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar",
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar",
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.24/96771497da90fbc5af1c90fce148db2595a62502/kotlin-script-runtime-1.9.24.jar",
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar",
+      "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar"
+    ],
+    "compilerInvocation": {
+      "executable": "/opt/homebrew/opt/openjdk@17/bin/java",
+      "arguments": [
+        "-cp",
+        "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.24/78dab849090e6c5e2eadb6e59a11cdc28fb67a08/kotlin-compiler-embeddable-1.9.24.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.24/96771497da90fbc5af1c90fce148db2595a62502/kotlin-script-runtime-1.9.24.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar:",
+        "org.jetbrains.kotlin.cli.jvm.K2JVMCompiler",
+        "-no-stdlib",
+        "-no-reflect",
+        "-classpath",
+        "/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:",
+        "-d",
+        "/tmp/smile-text-animation-parity-classes",
+        "/tmp/smile-text-animation-parity.kt"
+      ]
+    },
+    "runtimeInvocation": {
+      "executable": "/opt/homebrew/opt/openjdk@17/bin/java",
+      "arguments": [
+        "-cp",
+        "/tmp/smile-text-animation-parity-classes:/Users/m4/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar",
+        "Smile_text_animation_parityKt"
+      ]
+    },
+    "observedOutput": "Kotlin export math compiles and matches JavaScript in 220 animation samples.",
+    "initialAttempt": "An initial Node-launched compiler attempt timed out after 120 seconds during external disk reads. A subsequent compiler invocation completed successfully; its output was executed and compared."
+  }
+}
+

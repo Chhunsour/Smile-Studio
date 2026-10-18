@@ -1,0 +1,24 @@
+{
+  "fullDecodePassed": true,
+  "duration": 5.0,
+  "video": [
+    {
+      "codec": "h264",
+      "width": 720,
+      "height": 1280
+    }
+  ],
+  "audioCodecs": [
+    "aac"
+  ],
+  "silentLeadRmsPerChannel": [
+    0.0,
+    0.0
+  ],
+  "extractedAudioRmsPerChannel": [
+    0.08482765582060668,
+    0.08482765582060668
+  ],
+  "expectedRmsPerChannel": 0.0848528137423857,
+  "timingAndGainPassed": true
+}

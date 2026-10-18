@@ -1,0 +1,1982 @@
+{
+  "generatedAt": "2026-10-18T06:23:35.726Z",
+  "status": "passed",
+  "fixture": {
+    "path": "/tmp/smile-studio-creator-proof.json",
+    "sha256": "d9465ae48c376c6d14d13357279c680cf53eb74e539b72f9e8215a7cd4e0c4a3",
+    "scenes": 16,
+    "durationSeconds": 16
+  },
+  "video": {
+    "path": "/Volumes/Transcend/Smile Studio/docs/verification/2026-10-18-creator-tools/creator-tools-proof.mp4",
+    "sha256": "02de6aeae3864f5c41c1fb34a69aa94fe7342efe7a51cdfd7ef9b3f4ffa8b432",
+    "bytes": 1625213,
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "codec": "h264",
+    "frames": 384
+  },
+  "method": {
+    "description": "Decode exact ordinal RGB frames. Subtract alpha-zero scene-start background; measure caption-region differences and positive white-glyph geometry. Compare normalized transformed settled-glyph field with measured early glyph field, fitting amplitude independently so a fade-only fallback cannot satisfy a motion test.",
+    "animationPhaseSeconds": 0.5,
+    "nativeFontPixels": 39.6,
+    "nativeLineHeightPixels": 47.52,
+    "captionBounds": {
+      "x": 36,
+      "y": 768,
+      "width": 648,
+      "height": 436
+    },
+    "controlBounds": {
+      "x": 36,
+      "y": 384,
+      "width": 648,
+      "height": 320
+    },
+    "sampleFrameOffsets": [
+      0,
+      3,
+      6,
+      12
+    ],
+    "primaryOffsets": {
+      "pulse": 6,
+      "otherNewMotions": 3
+    },
+    "fieldNoiseThreshold": "max(20, 3 * max control-region99.9th-percentile max-channel difference)",
+    "thresholds": {
+      "rgbDifference": 20,
+      "minimumChangedCaptionPixels": 250,
+      "minimumCaptionMeanAbsoluteError": 0.25,
+      "maximumControlMeanAbsoluteError": 3,
+      "maximumControlChangedPixelFraction": 0.01,
+      "minimumExpectedTransformCorrelation": 0.7,
+      "minimumImprovementOverFadeOnly": 0.1,
+      "minimumSettledCaptionPixels": 150
+    },
+    "commands": {
+      "probe": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/Volumes/Transcend/Smile Studio/docs/verification/2026-10-18-creator-tools/creator-tools-proof.mp4"
+      ],
+      "decode": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-v",
+        "error",
+        "-i",
+        "/Volumes/Transcend/Smile Studio/docs/verification/2026-10-18-creator-tools/creator-tools-proof.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-vf",
+        "select=eq(n\\,0)+eq(n\\,3)+eq(n\\,6)+eq(n\\,12)+eq(n\\,48)+eq(n\\,51)+eq(n\\,54)+eq(n\\,60)+eq(n\\,96)+eq(n\\,99)+eq(n\\,102)+eq(n\\,108)+eq(n\\,120)+eq(n\\,123)+eq(n\\,126)+eq(n\\,132)+eq(n\\,144)+eq(n\\,147)+eq(n\\,150)+eq(n\\,156)+eq(n\\,168)+eq(n\\,171)+eq(n\\,174)+eq(n\\,180)+eq(n\\,192)+eq(n\\,195)+eq(n\\,198)+eq(n\\,204)+eq(n\\,216)+eq(n\\,219)+eq(n\\,222)+eq(n\\,228)+eq(n\\,264)+eq(n\\,267)+eq(n\\,270)+eq(n\\,276)+eq(n\\,312)+eq(n\\,315)+eq(n\\,318)+eq(n\\,324)+eq(n\\,336)+eq(n\\,339)+eq(n\\,342)+eq(n\\,348)+eq(n\\,360)+eq(n\\,363)+eq(n\\,366)+eq(n\\,372)",
+        "-fps_mode",
+        "passthrough",
+        "-f",
+        "rawvideo",
+        "-pix_fmt",
+        "rgb24",
+        "pipe:1"
+      ]
+    }
+  },
+  "limitations": [
+    "This is native pipeline recognition/visible-motion proof for the exact static-background fixture, not a general optical-flow test or a physical-device/Android runtime-export proof.",
+    "The export must have zero initial PTS, 720x1280 dimensions and24fps. The immutable fixture hash/title contracts are enforced; unexpected metadata or dynamic control backgrounds fail rather than silently weakening thresholds.",
+    "White-glyph contrast and normalized transform correlation suppress compression noise, dark caption-box opacity and global alpha changes. Background gradients underneath a moved caption can still reduce correlation; raw differences alone never count as motion recognition.",
+    "Exact curve equality across JS/Swift/Kotlin is established separately by animation-parity.json; compressed frame fits establish geometry consistent with those IDs, not exact floating-point equality or full entry/exit-curve coverage.",
+    "Primary samples are frame3(.125s) versus frame12(.5s), except pulse frame6(.25s) versus12; extra samples and duplicate fixture scenes are reported as corroboration."
+  ],
+  "animations": [
+    {
+      "kind": "slideDown",
+      "scenes": [
+        2,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "kind": "bounce",
+      "scenes": [
+        4,
+        13
+      ],
+      "passed": true
+    },
+    {
+      "kind": "zoomIn",
+      "scenes": [
+        5,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "kind": "zoomOut",
+      "scenes": [
+        6,
+        15
+      ],
+      "passed": true
+    },
+    {
+      "kind": "rise",
+      "scenes": [
+        7
+      ],
+      "passed": true
+    },
+    {
+      "kind": "pulse",
+      "scenes": [
+        8
+      ],
+      "passed": true
+    }
+  ],
+  "fadeControlScenes": [
+    {
+      "scene": 0,
+      "passed": true
+    },
+    {
+      "scene": 9,
+      "passed": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 0,
+      "title": "Smile Studio",
+      "titleId": "proof-title-0",
+      "animation": "fade",
+      "effects": {},
+      "baselineFrame": 0,
+      "settledFrame": 12,
+      "settledTimeSeconds": 0.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0,
+        "maximumChannelDifferencePercentile999": 0
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 341406,
+        "visiblePixels": 3363,
+        "centroidX": 359.0982818110988,
+        "centroidY": 999.9041727444743,
+        "sigmaX": 70.35092704194102,
+        "sigmaY": 7.333615000468678
+      },
+      "samples": [
+        {
+          "frameIndex": 3,
+          "timeSeconds": 0.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 15069,
+            "changedPixelFraction": 0.05333630648997621,
+            "meanAbsoluteError": 2.204534299845207,
+            "maximumChannelDifferencePercentile999": 58
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 180131,
+            "visiblePixels": 3181,
+            "centroidX": 359.1736708284526,
+            "centroidY": 999.9469302896225,
+            "sigmaX": 70.5178926243403,
+            "sigmaY": 7.3168694498588795
+          },
+          "measuredHorizontalScaleRatio": 1.0023733245519244,
+          "measuredCentroidYDifference": 0.04275754514821983,
+          "expectedFit": {
+            "correlation": 0.9949298028424209,
+            "fittedBrightnessGain": 0.5335295566707982,
+            "normalizedResidualEnergy": 0.010114687415941348
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.9949298028424209,
+            "fittedBrightnessGain": 0.5335295566707982,
+            "normalizedResidualEnergy": 0.010114687415941348
+          },
+          "correlationImprovementOverFadeOnly": 0,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 6,
+          "timeSeconds": 0.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 64,
+            "changedPixelFraction": 0.00022652622041001246,
+            "meanAbsoluteError": 0.6079692396269868,
+            "maximumChannelDifferencePercentile999": 19
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 295494,
+            "visiblePixels": 3345,
+            "centroidX": 359.0574901690051,
+            "centroidY": 999.8863631748868,
+            "sigmaX": 70.43507051810121,
+            "sigmaY": 7.330429843665864
+          },
+          "measuredHorizontalScaleRatio": 1.0011960535517894,
+          "measuredCentroidYDifference": -0.017809569587484475,
+          "expectedFit": {
+            "correlation": 0.9995301879645127,
+            "fittedBrightnessGain": 0.8660532626354143,
+            "normalizedResidualEnergy": 0.0009394033476259889
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.9995301879645127,
+            "fittedBrightnessGain": 0.8660532626354143,
+            "normalizedResidualEnergy": 0.0009394033476259889
+          },
+          "correlationImprovementOverFadeOnly": 0,
+          "checks": {
+            "meaningfulChange": false,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": false
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 2,
+      "title": "Film grain",
+      "titleId": "proof-title-2",
+      "animation": "slideDown",
+      "effects": {
+        "grain": 1
+      },
+      "baselineFrame": 48,
+      "settledFrame": 60,
+      "settledTimeSeconds": 2.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.0015705375514403293,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 268180,
+        "visiblePixels": 2598,
+        "centroidX": 357.07536356178684,
+        "centroidY": 1000.4835856514281,
+        "sigmaX": 54.65241969254317,
+        "sigmaY": 7.534511479929421
+      },
+      "samples": [
+        {
+          "frameIndex": 51,
+          "timeSeconds": 2.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1,
+            "dy": -0.025312499999999998,
+            "dyPixels": -32.4
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 19139,
+            "changedPixelFraction": 0.06774195831917544,
+            "meanAbsoluteError": 4.88407874617737,
+            "maximumChannelDifferencePercentile999": 157
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0009564686213991769,
+            "maximumChannelDifferencePercentile999": 1
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0006204989711934157,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 148735,
+            "visiblePixels": 2519,
+            "centroidX": 356.97271321477797,
+            "centroidY": 968.1699566342825,
+            "sigmaX": 54.60765033599435,
+            "sigmaY": 7.4844581860711275
+          },
+          "measuredHorizontalScaleRatio": 0.9991808348687821,
+          "measuredCentroidYDifference": -32.31362901714567,
+          "expectedFit": {
+            "correlation": 0.9945218230077577,
+            "fittedBrightnessGain": 0.5655731010943271,
+            "normalizedResidualEnergy": 0.010926343561326268
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.9945218230077577,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 54,
+          "timeSeconds": 2.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1,
+            "dy": -0.0075,
+            "dyPixels": -9.6
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 7981,
+            "changedPixelFraction": 0.028248527579567334,
+            "meanAbsoluteError": 3.156605127043455,
+            "maximumChannelDifferencePercentile999": 188
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0009564686213991769,
+            "maximumChannelDifferencePercentile999": 1
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0006204989711934157,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 225442,
+            "visiblePixels": 2554,
+            "centroidX": 357.3504715181732,
+            "centroidY": 990.9176905811694,
+            "sigmaX": 54.631960024556655,
+            "sigmaY": 7.411773267860408
+          },
+          "measuredHorizontalScaleRatio": 0.9996256402168172,
+          "measuredCentroidYDifference": -9.565895070258762,
+          "expectedFit": {
+            "correlation": 0.9931674963615551,
+            "fittedBrightnessGain": 0.8590267611149461,
+            "normalizedResidualEnergy": 0.01361832417092046
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.5079867278026742,
+            "fittedBrightnessGain": 0.4329362156850262,
+            "normalizedResidualEnergy": 0.7419494843763318
+          },
+          "correlationImprovementOverFadeOnly": 0.4851807685588809,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 4,
+      "title": "Cinema bars",
+      "titleId": "proof-title-4",
+      "animation": "bounce",
+      "effects": {
+        "letterbox": 1
+      },
+      "baselineFrame": 96,
+      "settledFrame": 108,
+      "settledTimeSeconds": 4.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0,
+        "maximumChannelDifferencePercentile999": 0
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 326057,
+        "visiblePixels": 3143,
+        "centroidX": 357.0588900100289,
+        "centroidY": 1000.6457781921566,
+        "sigmaX": 69.2801286258883,
+        "sigmaY": 6.809550713997878
+      },
+      "samples": [
+        {
+          "frameIndex": 99,
+          "timeSeconds": 4.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 0.7626953125,
+            "dy": 0.02373046875,
+            "dyPixels": 30.375
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 20056,
+            "changedPixelFraction": 0.07098765432098765,
+            "meanAbsoluteError": 5.4764979046324616,
+            "maximumChannelDifferencePercentile999": 162
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 102832,
+            "visiblePixels": 1736,
+            "centroidX": 357.60878909288937,
+            "centroidY": 1030.459613738914,
+            "sigmaX": 52.805006743003965,
+            "sigmaY": 5.14877394639546
+          },
+          "measuredHorizontalScaleRatio": 0.7621955644474947,
+          "measuredCentroidYDifference": 29.813835546757332,
+          "expectedFit": {
+            "correlation": 0.9912367292091678,
+            "fittedBrightnessGain": 0.5610575530855227,
+            "normalizedResidualEnergy": 0.01744974666671084
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.9912367292091678,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 102,
+          "timeSeconds": 4.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.89453125,
+            "dy": 0.010546874999999999,
+            "dyPixels": 13.499999999999998
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 14237,
+            "changedPixelFraction": 0.050391465624646054,
+            "meanAbsoluteError": 5.522755266734625,
+            "maximumChannelDifferencePercentile999": 190
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 221665,
+            "visiblePixels": 2512,
+            "centroidX": 357.38761419258793,
+            "centroidY": 1013.9272663704238,
+            "sigmaX": 62.036511313151024,
+            "sigmaY": 6.073208665684342
+          },
+          "measuredHorizontalScaleRatio": 0.8954445169717755,
+          "measuredCentroidYDifference": 13.281488178267182,
+          "expectedFit": {
+            "correlation": 0.9940261844786399,
+            "fittedBrightnessGain": 0.8703416248034874,
+            "normalizedResidualEnergy": 0.011911944570836996
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.21819181680315708,
+            "fittedBrightnessGain": 0.1668714670031549,
+            "normalizedResidualEnergy": 0.9523923310801375
+          },
+          "correlationImprovementOverFadeOnly": 0.7758343676754829,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 5,
+      "title": "Light leak",
+      "titleId": "proof-title-5",
+      "animation": "zoomIn",
+      "effects": {
+        "lightLeak": 1
+      },
+      "baselineFrame": 120,
+      "settledFrame": 132,
+      "settledTimeSeconds": 5.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.0905076517489712,
+        "maximumChannelDifferencePercentile999": 3
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 271682,
+        "visiblePixels": 2652,
+        "centroidX": 358.4383470380813,
+        "centroidY": 1000.846184141754,
+        "sigmaX": 53.923098499580156,
+        "sigmaY": 7.602003425505102
+      },
+      "samples": [
+        {
+          "frameIndex": 123,
+          "timeSeconds": 5.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 0.83125,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 12195,
+            "changedPixelFraction": 0.04316386340468909,
+            "meanAbsoluteError": 3.2900703647072147,
+            "maximumChannelDifferencePercentile999": 162
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.13726048096707819,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.09475951646090534,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "positiveGlyphGeometry": {
+            "mass": 102916,
+            "visiblePixels": 1733,
+            "centroidX": 359.2113762680244,
+            "centroidY": 1000.5924540401882,
+            "sigmaX": 44.92083162547857,
+            "sigmaY": 6.26443166480391
+          },
+          "measuredHorizontalScaleRatio": 0.8330536055124562,
+          "measuredCentroidYDifference": -0.2537301015657931,
+          "expectedFit": {
+            "correlation": 0.9901308646007965,
+            "fittedBrightnessGain": 0.5687025984443327,
+            "normalizedResidualEnergy": 0.01964087096487921
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.4653303987973761,
+            "fittedBrightnessGain": 0.21639383320942926,
+            "normalizedResidualEnergy": 0.783467619955075
+          },
+          "correlationImprovementOverFadeOnly": 0.5248004658034204,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 126,
+          "timeSeconds": 5.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.95,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 4266,
+            "changedPixelFraction": 0.015099388379204893,
+            "meanAbsoluteError": 1.6373775342620909,
+            "maximumChannelDifferencePercentile999": 181
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.08779095936213992,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.006735468106995885,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 206199,
+            "visiblePixels": 2327,
+            "centroidX": 358.61673189491705,
+            "centroidY": 1000.6978234618015,
+            "sigmaX": 50.94519533405212,
+            "sigmaY": 7.136501475609818
+          },
+          "measuredHorizontalScaleRatio": 0.9447749990562724,
+          "measuredCentroidYDifference": -0.14836067995247504,
+          "expectedFit": {
+            "correlation": 0.991616897218017,
+            "fittedBrightnessGain": 0.8704692322382878,
+            "normalizedResidualEnergy": 0.016695929151712585
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.7220416412585543,
+            "fittedBrightnessGain": 0.5862448851009532,
+            "normalizedResidualEnergy": 0.47865586828865314
+          },
+          "correlationImprovementOverFadeOnly": 0.26957525595946275,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 6,
+      "title": "Soft glow",
+      "titleId": "proof-title-6",
+      "animation": "zoomOut",
+      "effects": {
+        "bloom": 1
+      },
+      "baselineFrame": 144,
+      "settledFrame": 156,
+      "settledTimeSeconds": 6.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.04258616255144033,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 234716,
+        "visiblePixels": 2483,
+        "centroidX": 357.9238739583156,
+        "centroidY": 1000.5343436323046,
+        "sigmaX": 51.73088903513614,
+        "sigmaY": 7.544109613009006
+      },
+      "samples": [
+        {
+          "frameIndex": 147,
+          "timeSeconds": 6.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1.2109375,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 17222,
+            "changedPixelFraction": 0.06095679012345679,
+            "meanAbsoluteError": 4.0417244780458335,
+            "maximumChannelDifferencePercentile999": 156
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.07854938271604939,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.042959104938271604,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "positiveGlyphGeometry": {
+            "mass": 191859,
+            "visiblePixels": 3499,
+            "centroidX": 357.23953788980447,
+            "centroidY": 1001.1348047263876,
+            "sigmaX": 62.642516851609386,
+            "sigmaY": 9.093776624527576
+          },
+          "measuredHorizontalScaleRatio": 1.2109306068384396,
+          "measuredCentroidYDifference": 0.6004610940830162,
+          "expectedFit": {
+            "correlation": 0.9898827596646989,
+            "fittedBrightnessGain": 0.5766779296643889,
+            "normalizedResidualEnergy": 0.02013212211860005
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.4418780662204118,
+            "fittedBrightnessGain": 0.30321980469933285,
+            "normalizedResidualEnergy": 0.8047437745933094
+          },
+          "correlationImprovementOverFadeOnly": 0.548004693444287,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 150,
+          "timeSeconds": 6.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1.0625,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 4762,
+            "changedPixelFraction": 0.01685496658738249,
+            "meanAbsoluteError": 1.904434250764526,
+            "maximumChannelDifferencePercentile999": 178
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.04285461676954733,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0016476980452674898,
+            "maximumChannelDifferencePercentile999": 1
+          },
+          "positiveGlyphGeometry": {
+            "mass": 228093,
+            "visiblePixels": 2772,
+            "centroidX": 357.68649848965117,
+            "centroidY": 1000.742480041036,
+            "sigmaX": 54.810063994201435,
+            "sigmaY": 7.9803107970909855
+          },
+          "measuredHorizontalScaleRatio": 1.0595229468601224,
+          "measuredCentroidYDifference": 0.20813640873132044,
+          "expectedFit": {
+            "correlation": 0.9924291772243554,
+            "fittedBrightnessGain": 0.8843339121935031,
+            "normalizedResidualEnergy": 0.01508432819378891
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.6849991381730727,
+            "fittedBrightnessGain": 0.6320588488064521,
+            "normalizedResidualEnergy": 0.5307761807021477
+          },
+          "correlationImprovementOverFadeOnly": 0.30743003905128274,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 7,
+      "title": "Golden hour",
+      "titleId": "proof-title-7",
+      "animation": "rise",
+      "effects": {
+        "goldenHour": 1
+      },
+      "baselineFrame": 168,
+      "settledFrame": 180,
+      "settledTimeSeconds": 7.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.02953317901234568,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 262371,
+        "visiblePixels": 3012,
+        "centroidX": 356.48932427745444,
+        "centroidY": 1000.408175827359,
+        "sigmaX": 67.46982834748901,
+        "sigmaY": 6.847603276099048
+      },
+      "samples": [
+        {
+          "frameIndex": 171,
+          "timeSeconds": 7.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 0.9746874999999999,
+            "dy": 0.07500000000000001,
+            "dyPixels": 96.00000000000001
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 28771,
+            "changedPixelFraction": 0.10183415449088232,
+            "meanAbsoluteError": 7.59698743723336,
+            "maximumChannelDifferencePercentile999": 107
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0756542566872428,
+            "maximumChannelDifferencePercentile999": 4
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.058916859567901235,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 140675,
+            "visiblePixels": 2814,
+            "centroidX": 356.7208352585747,
+            "centroidY": 1096.4406788697352,
+            "sigmaX": 65.6940413291692,
+            "sigmaY": 6.597137078340021
+          },
+          "measuredHorizontalScaleRatio": 0.9736802795884703,
+          "measuredCentroidYDifference": 96.03250304237622,
+          "expectedFit": {
+            "correlation": 0.991262661079945,
+            "fittedBrightnessGain": 0.5794030634708269,
+            "normalizedResidualEnergy": 0.017398336748706167
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.991262661079945,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 174,
+          "timeSeconds": 7.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.9924999999999999,
+            "dy": 0.05,
+            "dyPixels": 64
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 29643,
+            "changedPixelFraction": 0.10492057424396874,
+            "meanAbsoluteError": 9.073599784800091,
+            "maximumChannelDifferencePercentile999": 107
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.029419045781893003,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.000236304012345679,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 221467,
+            "visiblePixels": 2928,
+            "centroidX": 356.0979852528819,
+            "centroidY": 1064.4930012146278,
+            "sigmaX": 66.96750607782282,
+            "sigmaY": 6.801885251256894
+          },
+          "measuredHorizontalScaleRatio": 0.9925548607137535,
+          "measuredCentroidYDifference": 64.08482538726889,
+          "expectedFit": {
+            "correlation": 0.9934927243596827,
+            "fittedBrightnessGain": 0.8750050671439586,
+            "normalizedResidualEnergy": 0.012972206644375484
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.9934927243596827,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 8,
+      "title": "Blue hour",
+      "titleId": "proof-title-8",
+      "animation": "pulse",
+      "effects": {
+        "coolGlow": 1
+      },
+      "baselineFrame": 192,
+      "settledFrame": 204,
+      "settledTimeSeconds": 8.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.05763567386831276,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 263932,
+        "visiblePixels": 2451,
+        "centroidX": 352.29324977645757,
+        "centroidY": 1000.4008418835155,
+        "sigmaX": 53.88820272959886,
+        "sigmaY": 7.004884817502575
+      },
+      "samples": [
+        {
+          "frameIndex": 195,
+          "timeSeconds": 8.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1.095459415460184,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 14246,
+            "changedPixelFraction": 0.05042332087439121,
+            "meanAbsoluteError": 3.017822422320384,
+            "maximumChannelDifferencePercentile999": 164
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.09010095164609054,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.044238683127572016,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 176551,
+            "visiblePixels": 2801,
+            "centroidX": 351.9906854110144,
+            "centroidY": 1000.5928400292266,
+            "sigmaX": 58.94076008813867,
+            "sigmaY": 7.562796322034239
+          },
+          "measuredHorizontalScaleRatio": 1.0937599901761916,
+          "measuredCentroidYDifference": 0.19199814571118168,
+          "expectedFit": {
+            "correlation": 0.9907754964636071,
+            "fittedBrightnessGain": 0.576929667328952,
+            "normalizedResidualEnergy": 0.01836391560729289
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.5383911874470224,
+            "fittedBrightnessGain": 0.33511302949981664,
+            "normalizedResidualEnergy": 0.7101349292793852
+          },
+          "correlationImprovementOverFadeOnly": 0.45238430901658466,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 198,
+          "timeSeconds": 8.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.91,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 5436,
+            "changedPixelFraction": 0.019240570846075434,
+            "meanAbsoluteError": 2.233816353305395,
+            "maximumChannelDifferencePercentile999": 188
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.056822273662551444,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0008519804526748971,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 187620,
+            "visiblePixels": 2019,
+            "centroidX": 353.1608037522652,
+            "centroidY": 1000.3751945421596,
+            "sigmaX": 49.12189031855502,
+            "sigmaY": 6.325402867311404
+          },
+          "measuredHorizontalScaleRatio": 0.9115518393708485,
+          "measuredCentroidYDifference": -0.02564734135580693,
+          "expectedFit": {
+            "correlation": 0.9936319520026886,
+            "fittedBrightnessGain": 0.8772366076474616,
+            "normalizedResidualEnergy": 0.012695543959326705
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.5312025463126453,
+            "fittedBrightnessGain": 0.4169186274603551,
+            "normalizedResidualEnergy": 0.7178238547909619
+          },
+          "correlationImprovementOverFadeOnly": 0.4624294056900433,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 6,
+      "passed": true
+    },
+    {
+      "scene": 9,
+      "title": "Dreamy",
+      "titleId": "proof-title-9",
+      "animation": "fade",
+      "effects": {
+        "dreamy": 1
+      },
+      "baselineFrame": 216,
+      "settledFrame": 228,
+      "settledTimeSeconds": 9.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.14313110853909464,
+        "maximumChannelDifferencePercentile999": 3
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 196660,
+        "visiblePixels": 2071,
+        "centroidX": 357.39423370283737,
+        "centroidY": 1000.948698260958,
+        "sigmaX": 44.23530627300919,
+        "sigmaY": 7.153234615675141
+      },
+      "samples": [
+        {
+          "frameIndex": 219,
+          "timeSeconds": 9.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 9891,
+            "changedPixelFraction": 0.035008919469928644,
+            "meanAbsoluteError": 1.4416305640502889,
+            "maximumChannelDifferencePercentile999": 53
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.1623360339506173,
+            "maximumChannelDifferencePercentile999": 4
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.06437596450617283,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 110562,
+            "visiblePixels": 1970,
+            "centroidX": 357.2150648504911,
+            "centroidY": 1000.9235542048805,
+            "sigmaX": 44.32510196335334,
+            "sigmaY": 7.174993393834858
+          },
+          "measuredHorizontalScaleRatio": 1.0020299552079497,
+          "measuredCentroidYDifference": -0.02514405607757908,
+          "expectedFit": {
+            "correlation": 0.9978022110410932,
+            "fittedBrightnessGain": 0.5672097705311553,
+            "normalizedResidualEnergy": 0.004390747641505599
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.9978022110410932,
+            "fittedBrightnessGain": 0.5672097705311553,
+            "normalizedResidualEnergy": 0.004390747641505599
+          },
+          "correlationImprovementOverFadeOnly": 0,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 222,
+          "timeSeconds": 9.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 4,
+            "changedPixelFraction": 0.000014157888775625779,
+            "meanAbsoluteError": 0.4226460150262393,
+            "maximumChannelDifferencePercentile999": 17
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.14338509516460907,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.015901491769547325,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 171440,
+            "visiblePixels": 2050,
+            "centroidX": 357.4150373308446,
+            "centroidY": 1000.952852309846,
+            "sigmaX": 44.240743660532715,
+            "sigmaY": 7.162349265243887
+          },
+          "measuredHorizontalScaleRatio": 1.0001229196309835,
+          "measuredCentroidYDifference": 0.004154048887926365,
+          "expectedFit": {
+            "correlation": 0.9995045283088558,
+            "fittedBrightnessGain": 0.8725409339872914,
+            "normalizedResidualEnergy": 0.0009906978900916519
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.9995045283088558,
+            "fittedBrightnessGain": 0.8725409339872914,
+            "normalizedResidualEnergy": 0.0009906978900916519
+          },
+          "correlationImprovementOverFadeOnly": 0,
+          "checks": {
+            "meaningfulChange": false,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": false
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 11,
+      "title": "Film dust",
+      "titleId": "proof-title-11",
+      "animation": "slideDown",
+      "effects": {
+        "filmDust": 1
+      },
+      "baselineFrame": 264,
+      "settledFrame": 276,
+      "settledTimeSeconds": 11.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.002499678497942387,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 240046,
+        "visiblePixels": 2376,
+        "centroidX": 357.5819301300584,
+        "centroidY": 999.7760679203153,
+        "sigmaX": 51.757426095479026,
+        "sigmaY": 7.253368795614053
+      },
+      "samples": [
+        {
+          "frameIndex": 267,
+          "timeSeconds": 11.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1,
+            "dy": -0.025312499999999998,
+            "dyPixels": -32.4
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 18085,
+            "changedPixelFraction": 0.06401135462679805,
+            "meanAbsoluteError": 4.573440508551365,
+            "maximumChannelDifferencePercentile999": 158
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.002499678497942387,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 133031,
+            "visiblePixels": 2280,
+            "centroidX": 357.471705842999,
+            "centroidY": 967.4336019424044,
+            "sigmaX": 51.78904347831484,
+            "sigmaY": 7.239766781151168
+          },
+          "measuredHorizontalScaleRatio": 1.000610876259138,
+          "measuredCentroidYDifference": -32.34246597791093,
+          "expectedFit": {
+            "correlation": 0.9944853826848564,
+            "fittedBrightnessGain": 0.5657810009638694,
+            "normalizedResidualEnergy": 0.010998823626154675
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.9944853826848564,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 270,
+          "timeSeconds": 11.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1,
+            "dy": -0.0075,
+            "dyPixels": -9.6
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 7668,
+            "changedPixelFraction": 0.027140672782874617,
+            "meanAbsoluteError": 2.9909896836183787,
+            "maximumChannelDifferencePercentile999": 188
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.002499678497942387,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0,
+            "maximumChannelDifferencePercentile999": 0
+          },
+          "positiveGlyphGeometry": {
+            "mass": 202538,
+            "visiblePixels": 2323,
+            "centroidX": 357.65415872577,
+            "centroidY": 990.2342128390721,
+            "sigmaX": 51.71718821832362,
+            "sigmaY": 7.1309618149027845
+          },
+          "measuredHorizontalScaleRatio": 0.9992225680411314,
+          "measuredCentroidYDifference": -9.54185508124317,
+          "expectedFit": {
+            "correlation": 0.9935004634971577,
+            "fittedBrightnessGain": 0.8622022360662477,
+            "normalizedResidualEnergy": 0.01295682903093276
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.4983435140561973,
+            "fittedBrightnessGain": 0.42622896910215563,
+            "normalizedResidualEnergy": 0.7516537419981206
+          },
+          "correlationImprovementOverFadeOnly": 0.4951569494409604,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 13,
+      "title": "Retro fade",
+      "titleId": "proof-title-13",
+      "animation": "bounce",
+      "effects": {
+        "retroFade": 1
+      },
+      "baselineFrame": 312,
+      "settledFrame": 324,
+      "settledTimeSeconds": 13.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.11498681841563786,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 236910,
+        "visiblePixels": 2669,
+        "centroidX": 357.18647587691527,
+        "centroidY": 999.9933096956651,
+        "sigmaX": 59.962333841794525,
+        "sigmaY": 6.97718953776467
+      },
+      "samples": [
+        {
+          "frameIndex": 315,
+          "timeSeconds": 13.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 0.7626953125,
+            "dy": 0.02373046875,
+            "dyPixels": 30.375
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 16951,
+            "changedPixelFraction": 0.059997593158908145,
+            "meanAbsoluteError": 4.7231165288632155,
+            "maximumChannelDifferencePercentile999": 154
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.12029481738683127,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.07379758230452675,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 77808,
+            "visiblePixels": 1483,
+            "centroidX": 357.725940777298,
+            "centroidY": 1029.9453141065187,
+            "sigmaX": 45.83092883806471,
+            "sigmaY": 5.293434780202695
+          },
+          "measuredHorizontalScaleRatio": 0.7643286360231688,
+          "measuredCentroidYDifference": 29.952004410853647,
+          "expectedFit": {
+            "correlation": 0.991432486370707,
+            "fittedBrightnessGain": 0.5793712789458836,
+            "normalizedResidualEnergy": 0.017061624968797817
+          },
+          "fadeOnlyFit": {
+            "correlation": 0,
+            "fittedBrightnessGain": 0,
+            "normalizedResidualEnergy": 1
+          },
+          "correlationImprovementOverFadeOnly": 0.991432486370707,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 318,
+          "timeSeconds": 13.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.89453125,
+            "dy": 0.010546874999999999,
+            "dyPixels": 13.499999999999998
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 12122,
+            "changedPixelFraction": 0.042905481934533925,
+            "meanAbsoluteError": 4.77163679352135,
+            "maximumChannelDifferencePercentile999": 180
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.11352398405349794,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.011622299382716049,
+            "maximumChannelDifferencePercentile999": 1
+          },
+          "positiveGlyphGeometry": {
+            "mass": 165276,
+            "visiblePixels": 2121,
+            "centroidX": 357.3714029865195,
+            "centroidY": 1013.2904111909775,
+            "sigmaX": 53.72002395644017,
+            "sigmaY": 6.242442534374289
+          },
+          "measuredHorizontalScaleRatio": 0.8958961487085517,
+          "measuredCentroidYDifference": 13.297101495312404,
+          "expectedFit": {
+            "correlation": 0.9925633014717343,
+            "fittedBrightnessGain": 0.8863346378649021,
+            "normalizedResidualEnergy": 0.014818092571530994
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.21489414011438113,
+            "fittedBrightnessGain": 0.16782597550359188,
+            "normalizedResidualEnergy": 0.9538205085445007
+          },
+          "correlationImprovementOverFadeOnly": 0.7776691613573532,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 14,
+      "title": "Frost",
+      "titleId": "proof-title-14",
+      "animation": "zoomIn",
+      "effects": {
+        "frost": 1
+      },
+      "baselineFrame": 336,
+      "settledFrame": 348,
+      "settledTimeSeconds": 14.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.012921167695473251,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 132624,
+        "visiblePixels": 1317,
+        "centroidX": 358.47477078055255,
+        "centroidY": 999.5315478344794,
+        "sigmaX": 29.879255896287805,
+        "sigmaY": 7.112174896477446
+      },
+      "samples": [
+        {
+          "frameIndex": 339,
+          "timeSeconds": 14.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 0.83125,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 7286,
+            "changedPixelFraction": 0.025788594404802356,
+            "meanAbsoluteError": 1.9126658832634877,
+            "maximumChannelDifferencePercentile999": 160
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.00583204732510288,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.0072048611111111115,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 50944,
+            "visiblePixels": 895,
+            "centroidX": 358.97493326005025,
+            "centroidY": 999.453085741206,
+            "sigmaX": 24.894933109427402,
+            "sigmaY": 5.899709269697062
+          },
+          "measuredHorizontalScaleRatio": 0.8331845075338823,
+          "measuredCentroidYDifference": -0.07846209327340148,
+          "expectedFit": {
+            "correlation": 0.9918659008315537,
+            "fittedBrightnessGain": 0.5695620998186248,
+            "normalizedResidualEnergy": 0.016202034767610507
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.4847872733463871,
+            "fittedBrightnessGain": 0.22562350734865153,
+            "normalizedResidualEnergy": 0.7649812996013754
+          },
+          "correlationImprovementOverFadeOnly": 0.5070786274851666,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 342,
+          "timeSeconds": 14.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 0.95,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 1996,
+            "changedPixelFraction": 0.007064786499037264,
+            "meanAbsoluteError": 0.7479494657756636,
+            "maximumChannelDifferencePercentile999": 114
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.010683513374485597,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.007047325102880658,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 101148,
+            "visiblePixels": 1166,
+            "centroidX": 359.0012654723771,
+            "centroidY": 999.5002867085855,
+            "sigmaX": 28.255979404515443,
+            "sigmaY": 6.691361648796948
+          },
+          "measuredHorizontalScaleRatio": 0.9456721245868095,
+          "measuredCentroidYDifference": -0.03126112589393415,
+          "expectedFit": {
+            "correlation": 0.9912490382909607,
+            "fittedBrightnessGain": 0.8741156613416681,
+            "normalizedResidualEnergy": 0.01742534408724561
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.8587461116270814,
+            "fittedBrightnessGain": 0.6999358796021052,
+            "normalizedResidualEnergy": 0.2625551157653683
+          },
+          "correlationImprovementOverFadeOnly": 0.1325029266638793,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    },
+    {
+      "scene": 15,
+      "title": "Spotlight",
+      "titleId": "proof-title-15",
+      "animation": "zoomOut",
+      "effects": {
+        "spotlight": 1
+      },
+      "baselineFrame": 360,
+      "settledFrame": 372,
+      "settledTimeSeconds": 15.5,
+      "noiseFloor": 20,
+      "settledControl": {
+        "pixels": 207360,
+        "changedPixels": 0,
+        "changedPixelFraction": 0,
+        "meanAbsoluteError": 0.046706211419753084,
+        "maximumChannelDifferencePercentile999": 2
+      },
+      "settledPositiveGlyphGeometry": {
+        "mass": 425605,
+        "visiblePixels": 3018,
+        "centroidX": 359.1598865144911,
+        "centroidY": 1000.687732756899,
+        "sigmaX": 50.755704670875026,
+        "sigmaY": 7.933138636510146
+      },
+      "samples": [
+        {
+          "frameIndex": 363,
+          "timeSeconds": 15.125,
+          "phase": 0.25,
+          "expected": {
+            "alpha": 0.578125,
+            "scale": 1.2109375,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 16244,
+            "changedPixelFraction": 0.057495186317816284,
+            "meanAbsoluteError": 3.3122439781779742,
+            "maximumChannelDifferencePercentile999": 191
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.09668370627572016,
+            "maximumChannelDifferencePercentile999": 3
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.05978973765432099,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "positiveGlyphGeometry": {
+            "mass": 364228,
+            "visiblePixels": 4263,
+            "centroidX": 358.9168460414905,
+            "centroidY": 1001.2869164369571,
+            "sigmaX": 61.63403780913477,
+            "sigmaY": 9.583118846618
+          },
+          "measuredHorizontalScaleRatio": 1.2143272999321004,
+          "measuredCentroidYDifference": 0.5991836800581041,
+          "expectedFit": {
+            "correlation": 0.9946659450992383,
+            "fittedBrightnessGain": 0.5963765553098596,
+            "normalizedResidualEnergy": 0.010639657659838986
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.5348677168467666,
+            "fittedBrightnessGain": 0.3803238638514762,
+            "normalizedResidualEnergy": 0.7139165254751272
+          },
+          "correlationImprovementOverFadeOnly": 0.45979822825247174,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        },
+        {
+          "frameIndex": 366,
+          "timeSeconds": 15.25,
+          "phase": 0.5,
+          "expected": {
+            "alpha": 0.875,
+            "scale": 1.0625,
+            "dy": 0,
+            "dyPixels": 0
+          },
+          "captionDifference": {
+            "pixels": 282528,
+            "changedPixels": 5355,
+            "changedPixelFraction": 0.01895387359836901,
+            "meanAbsoluteError": 1.7432502265262204,
+            "maximumChannelDifferencePercentile999": 199
+          },
+          "controlBaselineVsEarly": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.047530864197530866,
+            "maximumChannelDifferencePercentile999": 2
+          },
+          "controlEarlyVsSettled": {
+            "pixels": 207360,
+            "changedPixels": 0,
+            "changedPixelFraction": 0,
+            "meanAbsoluteError": 0.001654128086419753,
+            "maximumChannelDifferencePercentile999": 1
+          },
+          "positiveGlyphGeometry": {
+            "mass": 421889,
+            "visiblePixels": 3373,
+            "centroidX": 359.24236588296924,
+            "centroidY": 1000.9200962812494,
+            "sigmaX": 53.98912194237607,
+            "sigmaY": 8.401948043242347
+          },
+          "measuredHorizontalScaleRatio": 1.0637054946329307,
+          "measuredCentroidYDifference": 0.23236352435037588,
+          "expectedFit": {
+            "correlation": 0.9952900080376679,
+            "fittedBrightnessGain": 0.8947661903704427,
+            "normalizedResidualEnergy": 0.009397799900379034
+          },
+          "fadeOnlyFit": {
+            "correlation": 0.7258344711714626,
+            "fittedBrightnessGain": 0.6790777655937902,
+            "normalizedResidualEnergy": 0.47316432045924317
+          },
+          "correlationImprovementOverFadeOnly": 0.26945553686620527,
+          "checks": {
+            "meaningfulChange": true,
+            "staticBackground": true,
+            "captionDetected": true,
+            "geometryRecognized": true
+          },
+          "passed": true
+        }
+      ],
+      "primaryOffset": 3,
+      "passed": true
+    }
+  ]
+}

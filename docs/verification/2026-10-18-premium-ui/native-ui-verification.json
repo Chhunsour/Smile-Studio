@@ -1,0 +1,73 @@
+{
+  "target": "Smile Studio native iPhone 16 simulator, com.smilestudio.app",
+  "fixture": "premium-motion-proof-20261018",
+  "method": "Actual mounted native app component handlers invoked through Hermes developer bridge; simulator framebuffer screenshots. Does not simulate touch.",
+  "button": {
+    "held": {
+      "opacity": 0.78,
+      "role": "button",
+      "scale": 0.96,
+      "state": {
+        "disabled": false,
+        "selected": false
+      }
+    },
+    "released": {
+      "opacity": 1,
+      "role": "button",
+      "scale": 1,
+      "state": {
+        "disabled": false,
+        "selected": false
+      }
+    },
+    "reduceMotionHeld": {
+      "opacity": 0.78,
+      "role": "button",
+      "scale": 1,
+      "state": {
+        "disabled": false,
+        "selected": false
+      }
+    },
+    "reduceMotionMethod": "Simulated native accessibility change event; restored to actual OS preference. No OS setting changed."
+  },
+  "keyboard": {
+    "simulatedOverlap": 330,
+    "observedSheet": {
+      "bottom": 330,
+      "paddingBottom": 12
+    },
+    "nativeFocusSucceeded": true,
+    "actualSoftKeyboardShown": false,
+    "note": "Simulator hardware-keyboard mode hid software keyboard; geometry tested with simulated native events and then restored."
+  },
+  "actions": {
+    "playToPauseLabel": true,
+    "exportSettingsOpenedAndClosed": true,
+    "captionToolSearch": true
+  },
+  "screensInspected": [
+    "editor-light",
+    "tools-dark",
+    "tools-search",
+    "effects-dark",
+    "sounds-dark",
+    "stickers-dark",
+    "text-dark",
+    "export-dark",
+    "tools-keyboard-simulated"
+  ],
+  "restoration": {
+    "appearance": "light",
+    "route": "Studio",
+    "keyboardVisible": false,
+    "originalTwoProjectHashesUnchanged": true
+  },
+  "limitations": [
+    "No physical touch or device haptic proof",
+    "No system picker/share interaction proof",
+    "No Android runtime proof",
+    "Native export/build verification belongs to the coordinated feature task"
+  ]
+}

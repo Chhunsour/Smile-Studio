@@ -1,0 +1,582 @@
+{
+  "source": "/Volumes/Transcend/Smile Studio",
+  "mirror": "/private/tmp/smile-studio-verified",
+  "date": "2026-10-18",
+  "fileCount": 110,
+  "totalBytes": 1274963,
+  "originalHashesMatch": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "1044ca3cb6bbe9ef040cdad2c9314bf75d93129778690378f2f9e710e1fe23d2",
+      "bytes": 449
+    },
+    {
+      "path": ".prettierrc",
+      "sha256": "356971de0359f4f74009e9e8ad989d05c046adcc555aacddf1011a1882e4f390",
+      "bytes": 74
+    },
+    {
+      "path": "app.json",
+      "sha256": "43a9a2d9f5352ddd59d03360898abddfe22c0dd09cc52e3b8089f92104c265f1",
+      "bytes": 2037
+    },
+    {
+      "path": "assets/images/android-icon-foreground.png",
+      "sha256": "27a8d91f6ae7a4dc36728aa8815ce3f17218313a680a1300238afaab1aecff07",
+      "bytes": 15883
+    },
+    {
+      "path": "assets/images/android-icon-monochrome.png",
+      "sha256": "9b8749f0e2709266f491a0c9936cf76ba3ed1311b7dc035682a19c278014683f",
+      "bytes": 14287
+    },
+    {
+      "path": "assets/images/favicon.png",
+      "sha256": "31e450e6970578779edee286b01bc507a240244e991924b4008d2130a002eac4",
+      "bytes": 1344
+    },
+    {
+      "path": "assets/images/icon.png",
+      "sha256": "5bd2e2865f3663332b46cf416fc4d18e26b1dccdeb2f3031d406f898c7ace442",
+      "bytes": 28398
+    },
+    {
+      "path": "assets/images/splash-icon.png",
+      "sha256": "112dbe5d3226d18ecf44c85d5b550e93c579885e449b85cad25e13d230027ca8",
+      "bytes": 24859
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "6ea734f0e3f5b7c3c5720b3c467695516b14935724a78386b8534abc2959da12",
+      "bytes": 236
+    },
+    {
+      "path": "expo-env.d.ts",
+      "sha256": "6fc02634da46d3edc5a88eec9173ba6bf709726be3cba83c73ebd8e859d5c147",
+      "bytes": 110
+    },
+    {
+      "path": "metro.config.js",
+      "sha256": "c786173dc264a385979bdf69c1cee68b7aabe43876139e069f7516e596b80572",
+      "bytes": 365
+    },
+    {
+      "path": "modules/smile-engine/android/build.gradle",
+      "sha256": "3a769c61ce1eafc267f82874d621b6e9548fd9a6192f114c747333fb4a5cdd2f",
+      "bytes": 511
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/AndroidManifest.xml",
+      "sha256": "21058c692532098e42afc39cf09de946c38229ec414bb7ac32f4fc90ba9a5f45",
+      "bytes": 23
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/java/expo/modules/smileengine/SmileEngineModule.kt",
+      "sha256": "9b50fe48b1cc44b50dfccdd5a645fc261b85f35a3503e0212c8c6036960ef645",
+      "bytes": 14192
+    },
+    {
+      "path": "modules/smile-engine/android/src/main/java/expo/modules/smileengine/SmileExporter.kt",
+      "sha256": "879bfb3403767cfa022da3097843b7059f1439ad170565c4bd89f931177fc5b4",
+      "bytes": 40094
+    },
+    {
+      "path": "modules/smile-engine/expo-module.config.json",
+      "sha256": "61018999164f3af6e2aadd1125ff92f1833d3a8b7972eb2a13b8d73397be6d70",
+      "bytes": 177
+    },
+    {
+      "path": "modules/smile-engine/index.tsx",
+      "sha256": "227622f6bb2f41dcf22036d76f16a5033b011728d817cef5a4ba920e735eccde",
+      "bytes": 4956
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileColorView.swift",
+      "sha256": "71cf9d10b7d77d4faaef6395c720a84a5d2540522fe0fe1e604375dde99f49f1",
+      "bytes": 5223
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileEngine.podspec",
+      "sha256": "50dd8f74155e63246362ef8f171988d812e67614ad7bc788d886b70d79f59565",
+      "bytes": 676
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileEngineModule.swift",
+      "sha256": "5288a666628bc94233356e0b4dc4b62322a5d07ec666c486b3ef39feff330659",
+      "bytes": 11022
+    },
+    {
+      "path": "modules/smile-engine/ios/SmileExporter.swift",
+      "sha256": "9079607ba6aa010171874affe156fa3ec3809aa67b824486e603771e4eb70a93",
+      "bytes": 35583
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1cd92f6793b8dcaf98dab28c9b3b5da43affe6d9052543149a68d75223e7ac8f",
+      "bytes": 455928
+    },
+    {
+      "path": "package.json",
+      "sha256": "05b3bac5a976ff0967946c6094e52e78b288b517a457b8c1f802a1e6f1e01cd1",
+      "bytes": 1758
+    },
+    {
+      "path": "patches/expo-constants+57.0.21.patch",
+      "sha256": "98ec7d5bb18a7c6f9f94bf495fdf2b2663d6ab135f711eb06b6b351618659b2b",
+      "bytes": 1568
+    },
+    {
+      "path": "patches/expo-video+57.0.5.patch",
+      "sha256": "da0e86f81ed3ece9e4f5cd06d87cea33db903ba166605160af353e0dc7d90e80",
+      "bytes": 714
+    },
+    {
+      "path": "plugins/with-space-safe-bundle-script.js",
+      "sha256": "750a9febe041dea7ca2348fb69a85cd2eb2ce6d5d414f1c3cbcf52e9480300a4",
+      "bytes": 787
+    },
+    {
+      "path": "src/app/(tabs)/_layout.tsx",
+      "sha256": "b560722976bac22ffa04e6c9a88f01a8f4e5d423fa070cc4ae4641a1a5efd7e0",
+      "bytes": 1616
+    },
+    {
+      "path": "src/app/(tabs)/index.tsx",
+      "sha256": "222e1d3357ec93818ce50beb2cc24ce8a1023e18278f10517a8fef06de60f3e7",
+      "bytes": 130
+    },
+    {
+      "path": "src/app/(tabs)/profile.tsx",
+      "sha256": "6938ef370f44494bd9ded1bed75c0decd3dcabf7e0e4f1fde10aed84aa02a736",
+      "bytes": 7373
+    },
+    {
+      "path": "src/app/(tabs)/projects.tsx",
+      "sha256": "1a472421a97293b1483811b0df195e9d9ce57bf2f4c9fe072d5d028cf9ce36c3",
+      "bytes": 125
+    },
+    {
+      "path": "src/app/_layout.tsx",
+      "sha256": "f1b3cfa7bede0d4afa68605af2e6e08520cccfa0359f118416a02ab2a5042d1e",
+      "bytes": 2424
+    },
+    {
+      "path": "src/app/edit-profile.tsx",
+      "sha256": "7bb7236d74a20ebf54579ffc75a98a59e5bc7c7ca003f4c71b2e45794c79f8bd",
+      "bytes": 7284
+    },
+    {
+      "path": "src/app/editor/[id].tsx",
+      "sha256": "f4d95f935ca50337b483dd66c0cc822b442312140315c33621e436c28e00b907",
+      "bytes": 14753
+    },
+    {
+      "path": "src/app/help.tsx",
+      "sha256": "dd7b3ea93c69b27d15a23d32aa5fd48b3071d276d0d368a35531476e692345ed",
+      "bytes": 7508
+    },
+    {
+      "path": "src/app/settings.tsx",
+      "sha256": "b20f07d6dc198d94eab2e0afd004faa16866f83866b9da381188fb6109e9437a",
+      "bytes": 8860
+    },
+    {
+      "path": "src/app/sign-in.tsx",
+      "sha256": "8ed3098b687dd6569dfd54fb00664e7a066739c06110db5557db97815891e192",
+      "bytes": 5611
+    },
+    {
+      "path": "src/core/audio-analysis.test.ts",
+      "sha256": "fc97807264eecb4a26683e6d6fa07ffc7d3894a5e17a64de38e9f7bdf65539ae",
+      "bytes": 3098
+    },
+    {
+      "path": "src/core/audio-analysis.ts",
+      "sha256": "f6a7cacaabfc8e60d45fa84666ad90e41a9694ed5d06a6e92af276e3d1a670d3",
+      "bytes": 5944
+    },
+    {
+      "path": "src/core/audio-editing.test.ts",
+      "sha256": "c7c7589c7244b4ca9e5eaffd1c19a1cca1041d103dd9f0b331e2f25c44a73333",
+      "bytes": 7242
+    },
+    {
+      "path": "src/core/audio-editing.ts",
+      "sha256": "281f90a97908b7a077f98177fa2598335185566d9be8ec8abb65a010f03d6479",
+      "bytes": 8794
+    },
+    {
+      "path": "src/core/audio-pool.test.ts",
+      "sha256": "fa27c89d6973001bd60fbc817440affc4926640ded5881cd59def8aad7664634",
+      "bytes": 2247
+    },
+    {
+      "path": "src/core/audio-pool.ts",
+      "sha256": "8b18250b4ea5d7a7ae74e48e661a90b995988a3673c4e92aef0f4ea6c19f65f8",
+      "bytes": 1686
+    },
+    {
+      "path": "src/core/captions.test.ts",
+      "sha256": "187e1e1af0e940414ea56aff0b8ddac9ad99b16df6a3bc9fadf618fb3893c190",
+      "bytes": 13790
+    },
+    {
+      "path": "src/core/captions.ts",
+      "sha256": "70833b399ef65aab4591b9635493629de10c07a235f45cf39a14c83aad5736e8",
+      "bytes": 16952
+    },
+    {
+      "path": "src/core/color.test.ts",
+      "sha256": "78d852c2eb55f4a72a3c3527e3f90f7d39b901fe3c191b04229190197799f2e8",
+      "bytes": 1929
+    },
+    {
+      "path": "src/core/color.ts",
+      "sha256": "5017f33483832838ba7be02eac29ddb2d14554e0a8b654a8a11e61744fe307c6",
+      "bytes": 6150
+    },
+    {
+      "path": "src/core/drafts.test.ts",
+      "sha256": "9c961b6c1a6badaeb8e43d3f87a217a7d8c245bc0c6fadb2a10924de17e95446",
+      "bytes": 2748
+    },
+    {
+      "path": "src/core/drafts.ts",
+      "sha256": "96abf0392c94d5031a3b5bd1e0f343bcd124ffbc7a59986585ac94ed75b5983b",
+      "bytes": 991
+    },
+    {
+      "path": "src/core/editing.test.ts",
+      "sha256": "ce8f2a8cb748b991df679b14e6b9a0d7c1369dfc3cd0258193cf2336b899eae9",
+      "bytes": 1519
+    },
+    {
+      "path": "src/core/editing.ts",
+      "sha256": "35b5c0280291a98414b4ab453153f14917d995b355b98b64402fcfb80271dd46",
+      "bytes": 1959
+    },
+    {
+      "path": "src/core/effects.test.ts",
+      "sha256": "34e099c87dad2ecddeb4d8b3346965317ea0e0cafc7977513aac7e73e251b6aa",
+      "bytes": 6836
+    },
+    {
+      "path": "src/core/effects.ts",
+      "sha256": "626d944d04a4700bc9cc7ca57614b39473184c629ce182ba6aa770ea20c1c859",
+      "bytes": 13556
+    },
+    {
+      "path": "src/core/export.test.ts",
+      "sha256": "6dc0fd994fe2b95c0d31cae64b22ddf9c74e3c1cb2edcfd7c11a15dc4efbc838",
+      "bytes": 8155
+    },
+    {
+      "path": "src/core/export.ts",
+      "sha256": "9846ec1b4f2926eaad594c2317bd06b1e03e35cdd8e3a88a16373ea1cf8b2a55",
+      "bytes": 8493
+    },
+    {
+      "path": "src/core/preferences.test.ts",
+      "sha256": "6ca86ef72350b6e75be52b5694a2565df55037130a28bb454b486567ecb0ab17",
+      "bytes": 1990
+    },
+    {
+      "path": "src/core/preferences.ts",
+      "sha256": "4ea80eb1fc55b544561636ad0a28520396e9f75fa41b97db0afd9e16d2e55ddd",
+      "bytes": 2900
+    },
+    {
+      "path": "src/core/quick-edit.test.ts",
+      "sha256": "50c5141556cdada8ce9e8a7abc49b2d5206a54f0df3f62ac4e8921cd15a2c2cb",
+      "bytes": 5753
+    },
+    {
+      "path": "src/core/quick-edit.ts",
+      "sha256": "ccfb90b4a5a7cb7c122f5661a36a3377d8883534186bfeba96025f526d946758",
+      "bytes": 3034
+    },
+    {
+      "path": "src/core/sounds.test.ts",
+      "sha256": "67e113f3706d034ad48b4288286e4389c0060aca812a71477a8903ae2852ab20",
+      "bytes": 3330
+    },
+    {
+      "path": "src/core/sounds.ts",
+      "sha256": "ac757dd0e0df1e386fd5f2b00c738f04abff2dfbd2e33891ea1e43946a68258d",
+      "bytes": 7374
+    },
+    {
+      "path": "src/core/templates.ts",
+      "sha256": "e1c8d52a3bd17174124e2efb6275b27370ab5031f9a9e1f568ff95612a421817",
+      "bytes": 4143
+    },
+    {
+      "path": "src/core/timeline.test.ts",
+      "sha256": "beefab568a73eed825c6cf43de4247d92ce542969a3ba5fa8641d77740118ea2",
+      "bytes": 10706
+    },
+    {
+      "path": "src/core/timeline.ts",
+      "sha256": "c16322d15cf975f597f413c3ed33c95474342453f8385ef36eaf4e0de9331d9d",
+      "bytes": 12958
+    },
+    {
+      "path": "src/core/types.ts",
+      "sha256": "d6ddbc7544c626aa49edb0c368e038e5d2d592f7697cae71f84fe9513c6bf2c7",
+      "bytes": 4641
+    },
+    {
+      "path": "src/editor/AudioToolsPanel.tsx",
+      "sha256": "44d85cd1b1dd0967195dd43b0009fd8d051405d9fc81840d3e5c9a0d31a5530b",
+      "bytes": 12271
+    },
+    {
+      "path": "src/editor/CaptionsPanel.tsx",
+      "sha256": "bd061add6546ddb19866dd49c6aa30611a1504b776a1fe28851c776845cbcecf",
+      "bytes": 16659
+    },
+    {
+      "path": "src/editor/EffectsOverlay.tsx",
+      "sha256": "1e64e45d49e905c1831e013d028ac83d34383b00c8749a7e6fdde1a3315430a4",
+      "bytes": 1646
+    },
+    {
+      "path": "src/editor/EffectsPanel.tsx",
+      "sha256": "7f2cc5a1aabd55262bb32aa3b901bfe252753b1a19e8d6cf2201d605d965d4bf",
+      "bytes": 18361
+    },
+    {
+      "path": "src/editor/ExportFlow.tsx",
+      "sha256": "9e5467221e5405f77eec501469096ab95b2ee86bd2089bebebe322961318a692",
+      "bytes": 13492
+    },
+    {
+      "path": "src/editor/Preview.tsx",
+      "sha256": "fcaa085391784ce3990121b2f1094344424b8992d2bfe3488d60e851601d075a",
+      "bytes": 23770
+    },
+    {
+      "path": "src/editor/SoundLibraryPanel.tsx",
+      "sha256": "023870072d92d9eb9187055316d7006ebcc59bd598cc80c0e09402e31c4e1fca",
+      "bytes": 10778
+    },
+    {
+      "path": "src/editor/StickersPanel.tsx",
+      "sha256": "7e8104f121253193828f872a288d865564ab3e5d012a9a0bac215f447d23a447",
+      "bytes": 6578
+    },
+    {
+      "path": "src/editor/TemplatesPanel.tsx",
+      "sha256": "0fe8d99c27fe70e843912c0354a027ba4011d9bb6a10f0ce606c43431967fdb1",
+      "bytes": 5890
+    },
+    {
+      "path": "src/editor/Timeline.tsx",
+      "sha256": "1e54b281a24bdc52c757341dd35d75c28c29ce31996a707d0af938f816b0b709",
+      "bytes": 49739
+    },
+    {
+      "path": "src/editor/TimingPanel.tsx",
+      "sha256": "dc870cd0f82eb49a3be198bd9810672716a37fcd3adbb35d43123096b8a75180",
+      "bytes": 5410
+    },
+    {
+      "path": "src/editor/ToolLibrary.tsx",
+      "sha256": "29ed5144ce177197d553dd4850365080bec2f02bf92507f457eea644422d09e8",
+      "bytes": 7339
+    },
+    {
+      "path": "src/editor/Toolbar.tsx",
+      "sha256": "1661f5f029191e696e48d5f1460d6888d44c944b2d1858c426428ff491974d21",
+      "bytes": 70853
+    },
+    {
+      "path": "src/editor/still.ts",
+      "sha256": "b6e81e26f4071fad5966b7e539e17646eec98512fc3cc8a2f391adca073ce934",
+      "bytes": 1495
+    },
+    {
+      "path": "src/editor/text-presets.ts",
+      "sha256": "c48dd0596728d4c1d09615c5cae082fbdbbc7739e4c5b1427b9bd22c7ab6b5bf",
+      "bytes": 4298
+    },
+    {
+      "path": "src/playback/engine.ts",
+      "sha256": "614d315bf996d5074804f25f0c1140c75a4856f616abdcd0f28be4cd5563fe37",
+      "bytes": 21029
+    },
+    {
+      "path": "src/playback/player-utils.ts",
+      "sha256": "d1597951f33fe7c4fa8773fb983f1c0d035e224126f023eb75827e75aefa3539",
+      "bytes": 2050
+    },
+    {
+      "path": "src/playback/thumbnails.ts",
+      "sha256": "be02b7d62f6301d4325250490b51faee0062aedf7f592789ad736f8e2bb6900e",
+      "bytes": 2546
+    },
+    {
+      "path": "src/playback/voiceover-session.test.ts",
+      "sha256": "728e1ac094ae8118b45167c1e630ec70a441e5e9b9e5c7a8e286c9d350154ce7",
+      "bytes": 2658
+    },
+    {
+      "path": "src/playback/voiceover-session.ts",
+      "sha256": "cf29d6eedfbede0c49f6ed950d4f5300c8dda1779cf07b123ec27b723fa3da34",
+      "bytes": 1185
+    },
+    {
+      "path": "src/playback/waveforms.ts",
+      "sha256": "42673ddfabe379e81ae4a4bebf92e0ed04ac0e84cb1d0a9ac6b8ffd8d7cba245",
+      "bytes": 4582
+    },
+    {
+      "path": "src/state/editor.ts",
+      "sha256": "2a9f9237d5002aa10aa130ee5ba06fd059dd974b0a92a698c7037e39bddadc1a",
+      "bytes": 10432
+    },
+    {
+      "path": "src/state/import.ts",
+      "sha256": "9c4f498b54da3430a412ed46b0286b6b4e0b5ed54ddd65939218ad3af3396947",
+      "bytes": 1693
+    },
+    {
+      "path": "src/state/preferences.ts",
+      "sha256": "ab79ef67594be942bf03234c22fd1b610821b3381d3fe034e392b9170dc0f8ce",
+      "bytes": 2363
+    },
+    {
+      "path": "src/storage/captions.ts",
+      "sha256": "bc1b2f8899d735f35ef378e06e9e250b56545ffc8c17231454361d2a76998006",
+      "bytes": 1769
+    },
+    {
+      "path": "src/storage/media.ts",
+      "sha256": "c711fb8d18ae6a61531b2f69c4e39a8afa2f70104dae139ddf007624fdfb1396",
+      "bytes": 6582
+    },
+    {
+      "path": "src/storage/projects.ts",
+      "sha256": "2e355e1e3dd1811a8e65f273fceb5dab551be58bb136ca84362cd294043513cd",
+      "bytes": 5019
+    },
+    {
+      "path": "src/storage/sounds.ts",
+      "sha256": "ccf2591184ac243829ed1f1809b00cda54cada0453c4869370b0304c79482ce3",
+      "bytes": 420
+    },
+    {
+      "path": "src/studio/ProjectLibrary.tsx",
+      "sha256": "7ccac57782be3e71910f81c3652592b7973d08cf5a8964d562a320c526104c2b",
+      "bytes": 14265
+    },
+    {
+      "path": "src/studio/StudioHomeHeader.tsx",
+      "sha256": "b23bde0bc2f1be2e3a067f1bee7a12dd8342415614e80b7f8fb13a6f4155e8f9",
+      "bytes": 7912
+    },
+    {
+      "path": "src/studio/StylePreview.tsx",
+      "sha256": "2944dd0f56a973d241935245202c56052e1e33629ba6a8f4a5a700c49e10c2c8",
+      "bytes": 3816
+    },
+    {
+      "path": "src/studio/useCreateProject.tsx",
+      "sha256": "a2a4e05c589d94dd32e0f6707a9495f7574ce1bbac6f58ce3cf8e2fe81353f9f",
+      "bytes": 1597
+    },
+    {
+      "path": "src/ui/Logo.tsx",
+      "sha256": "f6acdb3694e2accd15de4bc39ecfb011c23c72bca3c1ac2b928c173f9290356b",
+      "bytes": 1296
+    },
+    {
+      "path": "src/ui/MotionPressable.tsx",
+      "sha256": "8c22978d3b51022934a1d481044216670f49b4a3edfbd4cb4d143014fa3b7337",
+      "bytes": 3824
+    },
+    {
+      "path": "src/ui/PromptDialog.tsx",
+      "sha256": "740c212060d9ae2f44bced407a73b46891c1db41708cf17b7d8ee8bead915e45",
+      "bytes": 4241
+    },
+    {
+      "path": "src/ui/Screen.tsx",
+      "sha256": "f6faa8522e97a428f679eda7464d2da9be232bdd02f31fd33165fc562526f5a2",
+      "bytes": 8047
+    },
+    {
+      "path": "src/ui/Sheet.tsx",
+      "sha256": "eba6fc2a4feb0995a7047eb62323697e496c6ab3fe9dc47ea9ad2f58d836319b",
+      "bytes": 4324
+    },
+    {
+      "path": "src/ui/Slider.tsx",
+      "sha256": "445f34e4d782eb8aa2233bdf81019b0b110e725683eace9cfc7dabb48f8ecff3",
+      "bytes": 2869
+    },
+    {
+      "path": "src/ui/StudioIcon.tsx",
+      "sha256": "4e77ae0fc1cd30665d6ef56e625315a85b31892a6248b8eee13a8344ddddb72b",
+      "bytes": 1811
+    },
+    {
+      "path": "src/ui/fonts.ts",
+      "sha256": "7dfbf7043d6ab02d89dc78244c4adbe5b772ffe8f3648f7965efcf4036fb6d85",
+      "bytes": 1278
+    },
+    {
+      "path": "src/ui/motion.tsx",
+      "sha256": "97cda7c489977ab76adce094af87465f8fd88b1522e26dfeedaa2d44041b61dc",
+      "bytes": 1050
+    },
+    {
+      "path": "src/ui/studio-glyphs.ts",
+      "sha256": "f5bbbde9d7df0a7e7c2f9367932862b271c64be130b21e7d2fcdb1b388c92357",
+      "bytes": 12813
+    },
+    {
+      "path": "src/ui/theme.ts",
+      "sha256": "4f719512b2e96523b74d6e24cf4480171a3a5f64d0d4fba7142f1915ff9b962d",
+      "bytes": 2942
+    },
+    {
+      "path": "src/ui/useImport.tsx",
+      "sha256": "d24875af585daca7d0f336b759d9143d212bf7e7b1ec99334d3fedc747104884",
+      "bytes": 4042
+    },
+    {
+      "path": "src/ui/useKeyboardSpace.ts",
+      "sha256": "0cc50e8ef4a16725c0b44db414d1cdcf576672d9e4029079045d512a29ef334b",
+      "bytes": 1567
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "3f9f757aa77e7624826ca8b67fe7068b712e97b810ebed622759a63fe61f0850",
+      "bytes": 506
+    }
+  ],
+  "excludedRootDirectories": [
+    "node_modules",
+    "ios",
+    "android",
+    ".git",
+    "docs"
+  ],
+  "excludedNestedDirectories": [
+    ".cxx",
+    ".git",
+    ".gradle",
+    "DerivedData",
+    "Pods",
+    "__pycache__",
+    "build",
+    "node_modules"
+  ],
+  "excludedSensitiveFiles": [
+    ".env",
+    ".env.*"
+  ],
+  "verifiedAt": "2026-10-18T05:30:23.382Z"
+}

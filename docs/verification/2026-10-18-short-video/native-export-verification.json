@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "nativeBridgeChecks": 10,
+  "fullDecodeExit": 0,
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "24/1",
+        "duration": "8.000000",
+        "nb_frames": "192"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "duration": "8.000000",
+        "nb_frames": "347"
+      }
+    ],
+    "format": {
+      "duration": "8.000000",
+      "size": "690927"
+    }
+  },
+  "audio": {
+    "decodedStereoSamples": 705600,
+    "meanVolumeDB": -29.3,
+    "peakVolumeDB": -16.1
+  },
+  "effects": {
+    "allFiveVisible": true,
+    "smoothMaxRGBError": 1.2331631578233555,
+    "fadeCrossfadeMaxRGBError": 2.010089625021706,
+    "reference": "Shared effectPixel with exported baseline RGB",
+    "baselineRGB": [
+      138,
+      163,
+      189
+    ]
+  },
+  "captions": "English and Khmer visually checked; readable glyphs, no clipping, above scene effects",
+  "artifacts": [
+    "native-export.mp4",
+    "export-frames.png",
+    "caption-detail.png",
+    "effect-pixels.json",
+    "native-export-verification.json"
+  ],
+  "checks": [
+    "Updated native bridge is available",
+    "Editor is idle or showing the isolated fixture",
+    "Read isolated native-proof project",
+    "Isolated fixture contains video and pulse audio",
+    "Fixture media files exist",
+    "Native decoder returned known music amplitude variation and half-second onsets",
+    "Native waveform cache samples varying music amplitude",
+    "Trimmed and sped-up beat markers rebase correctly",
+    "App export builder resolved all five effects into an 8-second 720p spec",
+    "Native exporter wrote a non-empty MP4 in app cache"
+  ],
+  "analysis": {
+    "duration": 16,
+    "bins": 1024,
+    "sampleRate": 12000,
+    "channels": 1,
+    "maxPeak": 0.47201406955718994,
+    "minPeak": 0.059560127556324005,
+    "onsets": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      8.5,
+      9,
+      9.5,
+      10,
+      10.5,
+      11,
+      11.5,
+      12,
+      12.5,
+      13,
+      13.5,
+      14,
+      14.5,
+      15,
+      15.5
+    ]
+  },
+  "waveform": {
+    "columns": 64,
+    "sample": [
+      {
+        "rms": 0.16046649230852716,
+        "peak": 0.4609837532043457
+      },
+      {
+        "rms": 0.10114710599064106,
+        "peak": 0.18579339981079102
+      },
+      {
+        "rms": 0.09339399046956753,
+        "peak": 0.16431662440299988
+      },
+      {
+        "rms": 0.08694820192818255,
+        "peak": 0.13056135177612305
+      },
+      {
+        "rms": 0.13261962459084056,
+        "peak": 0.29988008737564087
+      },
+      {
+        "rms": 0.09890001085169578,
+        "peak": 0.17039304971694946
+      },
+      {
+        "rms": 0.09336441597139443,
+        "peak": 0.16650336980819702
+      },
+      {
+        "rms": 0.08718595419116434,
+        "peak": 0.13042229413986206
+      }
+    ],
+    "maxPeak": 0.47201406955718994,
+    "minPeak": 0.13042229413986206,
+    "markers": [
+      1,
+      1.25,
+      1.5,
+      1.75,
+      2,
+      2.25,
+      2.5,
+      2.75
+    ]
+  }
+}

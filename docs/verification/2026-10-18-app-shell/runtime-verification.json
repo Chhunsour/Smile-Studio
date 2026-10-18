@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "applicationId": "com.smilestudio.app",
+  "device": "iPhone 16 simulator",
+  "deviceUDID": "93BCE7CC-D004-43AF-8F44-1EB2ADF526E9",
+  "method": "Actual native Hermes runtime and React control handlers through local CDP; simulator framebuffer screenshots; no touch automation",
+  "sourceMirror": "/private/tmp/smile-studio-verified",
+  "sourceFilesMatched": 110,
+  "sourceHashProof": "final-source-manifest.json",
+  "checks": {
+    "studioProjectsProfileTabHandlers": true,
+    "lightDarkThemeRendering": true,
+    "systemPreferenceSelectionSaved": true,
+    "localProfileNameBioAvatarSaved": true,
+    "khmerProfileTextPreserved": true,
+    "defaultCanvasAndExportSettingsSaved": true,
+    "alteredPreferencesRehydratedAfterTerminateLaunch": true,
+    "helpNavigation": true,
+    "signInPreviewNoCredentialInputs": true,
+    "signInProvidersDisabled": true,
+    "savedProjectsUnchanged": true,
+    "savedProjectCount": 3,
+    "originalPreferencesRestored": true,
+    "originalPreferenceFileBytesRestored": true,
+    "profileSafeAreaVisualAccepted": true
+  },
+  "preferenceFileRestoredSHA256": "4489f9560a7f75e278de5e8e494799f8e18a922b9a8375c98cbdbf47dcc0294f",
+  "finalRoute": "Studio",
+  "finalPreferences": {
+    "appearance": "light",
+    "avatarTone": "sunshine",
+    "bio": "",
+    "defaultAspect": "9:16",
+    "displayName": "Your studio",
+    "exportFps": 30,
+    "exportResolution": 1080
+  },
+  "limitations": [
+    "Computer Use startup failed; no genuine touch or keyboard gesture validation.",
+    "System follows OS appearance requires native configuration rebuild/sync and was not validated in this window.",
+    "No physical-device or Android runtime validation in this shell audit.",
+    "No new native build, export, backend, deployment, or release was performed by this audit."
+  ],
+  "screenshots": {
+    "home-light.png": "Accepted Studio light appearance",
+    "home-dark.png": "Accepted Studio dark appearance",
+    "settings-light.png": "Fresh top capture with status bar and header",
+    "settings-dark.png": "Dark appearance controls",
+    "profile-light.png": "Accepted local Profile with full status bar, header and tab labels",
+    "sign-in-dark.png": "Disabled account providers and design preview",
+    "help-light.png": "Editing guide navigation",
+    "projects-light.png": "Existing local drafts listed without modifications"
+  }
+}

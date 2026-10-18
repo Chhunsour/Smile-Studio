@@ -1,42 +1,70 @@
 {
   "expo": {
-    "name": "smile-studio",
+    "name": "Smile Studio",
     "slug": "smile-studio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "smilestudio",
     "userInterfaceStyle": "automatic",
+    "backgroundColor": "#F7F6F2",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.smilestudio.app",
+      "supportsTablet": true
     },
     "android": {
+      "package": "com.smilestudio.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFD23F",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F7F6F2",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 96,
+          "dark": {
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#101113"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Smile Studio needs access to your photo library so you can import videos into your projects.",
+          "cameraPermission": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Smile Studio needs access to your photo library to import videos.",
+          "savePhotosPermission": "Smile Studio saves your exported videos to your photo library.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      "expo-video",
+      "expo-sharing",
+      "./plugins/with-space-safe-bundle-script",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Smile Studio uses the microphone to record voiceovers for your videos.",
+          "recordAudioAndroid": true,
+          "enableBackgroundRecording": false
         }
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }

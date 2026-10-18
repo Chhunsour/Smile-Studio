@@ -1,0 +1,5 @@
+{
+  "silentTrimError": "This trimmed range is silent. There is no audio to extract.",
+  "silenceLeavesProjectUnchanged": true,
+  "nonUnitSpeedDisabled": true
+}

@@ -1,0 +1,12 @@
+{
+  "preferences": {
+    "appearance": "light",
+    "avatarTone": "sunshine",
+    "bio": "",
+    "defaultAspect": "9:16",
+    "displayName": "Your studio",
+    "exportFps": 30,
+    "exportResolution": 1080
+  },
+  "ready": true
+}

@@ -1,0 +1,24 @@
+# App experience completion audit
+
+18 October 2026, Phnom Penh. The original request is a more beautiful, clean, complete-feeling mobile app with Settings, Profile and light/dark appearance. Sign-in must remain a mockup without a backend.
+
+| Requirement | Current authoritative evidence | Result |
+| --- | --- | --- |
+| Polished, coherent mobile UI | Original-resolution native Home Light/Dark, Settings, Profile, Projects, Help and sign-in captures in this directory; all use the shared Smile palette, spacing and icon system | Proven on iPhone 16 simulator |
+| Complete app navigation | `src/app/(tabs)/` defines Studio, Projects and Profile; root stack defines Settings, Edit Profile, Help and sign-in; actual mounted navigation handlers exercised | Proven |
+| Functional Settings | Actual native appearance, canvas, resolution and frame-rate controls changed local preferences; changed values rehydrated after complete app terminate/launch | Proven |
+| Editable Profile | Actual native controls saved Khmer/English name, bio and avatar tone; profile statistics come from real local project files | Proven |
+| Working Light/Dark modes | Native shell, status bar and editor visuals inspected in both palettes; selection persists | Proven |
+| Mock sign-in; no database/backend | `src/app/sign-in.tsx` has no credential fields and three disabled providers; actual native controls confirm no sign-in action is available | Proven |
+| Preserve existing drafts | All three project JSON SHA-256 values unchanged; original preference file restored byte for byte after verification | Proven |
+| Required code checks | Latest full TypeScript and ESLint exit 0; zero lint warnings; 106/106 Node tests; original `git diff --check` passes; all 115 final mirror source/config/asset hashes independently match original after the slider, audio-import preservation, native modal handoff and repeat-audio boundary fixes | Proven |
+| Expo Router and SDK compatibility | Screens use Expo Router; SDK 57 dependencies unchanged; no new dependency or native module introduced by the shell | Proven from source and lockfile |
+| Added System appearance choice follows the OS | Installed Info.plist is Automatic; actual OS Light/Dark changes each match native Appearance, mounted root/navigation palette, Expo StatusBar and native barStyle for three consecutive observations | Proven on rebuilt iPhone 16 app |
+
+The machine-readable native audit is `runtime-verification.json`; its session source equality is `final-source-manifest.json`. Latest source equality is `latest-source-manifest.json`: all 115 original and mirror file hashes were independently checked again. Screenshots are untouched simulator framebuffer captures. Developer integration invoked real mounted handlers rather than simulating physical touch. Physical-device, Android runtime, keyboard/picker/share gestures and release splash remain unverified limits. No deployment, App Store submission, commit or push was requested or performed.
+
+The final System appearance integration gate is closed. `system-appearance-report.json` records the passing installed-app check, and `system-appearance-verification.md` links the untouched Light/Dark captures and final used harness. Preferences were restored byte for byte, the OS setting and Studio route were restored, and all four projects present during this session remained unchanged. Independently comparing those hashes also confirms all three original shell-audit projects still match their initial baseline; the original preference SHA-256 remains identical. The final audit did not terminate, relaunch, pause or reload the app.
+
+The coordinated original iOS full build passed with exit 0. Expo 57's actual CLI was found to default prebuild to cleaning generated native folders. Both original native projects were regenerated through Expo, with package and lockfile unchanged. Internal-SSD iOS preparation then passed with explicit `--no-clean`, exact dependency versions, 118 installed pods, and all 112 then-frozen source/config/asset hashes unchanged; see `native-preparation.json`. The following single rebuild with an explicitly internal DerivedData path also passed with exit 0. Subsequent JavaScript fixes are included in the final 115-file manifest. The rebuilt Automatic app was installed and passed the final OS-following check.
+
+Read-only SDK 57 native-mod introspection passed with source manifests unchanged. `native-config-introspection.json` confirms iOS `UIUserInterfaceStyle=Automatic`, the cream root background, and Android automatic appearance plus light/dark splash resources. Subsequent normal Expo generation has now applied those values to the native projects, including iOS cream/charcoal splash assets. Introspection and generated configuration do not replace OS-follow runtime proof in the installed app.

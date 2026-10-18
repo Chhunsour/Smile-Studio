@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-18",
+  "passed": true,
+  "run": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z",
+  "installedUIUserInterfaceStyle": "Automatic",
+  "appRestartPerformed": false,
+  "allCopiesByteIdentical": true,
+  "originalRuntimeVerificationPreserved": true,
+  "files": [
+    {
+      "file": "system-appearance-report.json",
+      "sha256": "286bf543d26e70cba350d984609e553f1d91685f17e1c2c4182dc42acfb93e06",
+      "bytes": 13404,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/system-appearance-report.json"
+    },
+    {
+      "file": "system-light.png",
+      "sha256": "71853bcaaa29db25a53e5c7c021370799842efaf5a1d4a3a6cb583cd43d3b83d",
+      "bytes": 268874,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/system-light.png",
+      "pixels": [
+        1179,
+        2556
+      ]
+    },
+    {
+      "file": "system-dark.png",
+      "sha256": "24edb36ef480a3b265b76368fd73c098da340d19416051d5fbac9f46d785edf5",
+      "bytes": 248426,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/system-dark.png",
+      "pixels": [
+        1179,
+        2556
+      ]
+    },
+    {
+      "file": "system-restored-studio.png",
+      "sha256": "0500338b13bcdf6ae7a9056498e67a5accb44ec172cfe9ec2c5343dfc933cefc",
+      "bytes": 917586,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/restored-studio.png",
+      "pixels": [
+        1179,
+        2556
+      ]
+    },
+    {
+      "file": "system-audit-harness/system-appearance-audit.mjs",
+      "sha256": "0f4a0fd9401c6c424424313e482b0f2053ea5cb3671376a14feaefec94102a3b",
+      "bytes": 17486,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-audit.mjs"
+    },
+    {
+      "file": "system-audit-harness/cdp.mjs",
+      "sha256": "85df7eec76395ae488847d6f087b21aca9b632ea31842d00171227d2858034b7",
+      "bytes": 2738,
+      "source": "/private/tmp/smile-studio-verified/verification/cdp.mjs"
+    },
+    {
+      "file": "system-audit-harness/native-ui.js",
+      "sha256": "5e5add66e02d77971300ddf67d92d3512226cd6b137a8850cfda76eb1ddd2292",
+      "bytes": 2741,
+      "source": "/private/tmp/smile-studio-verified/verification/native-ui.js"
+    },
+    {
+      "file": "system-audit-snapshots/baseline.json",
+      "sha256": "b279e5142c769f97601316188b5a7d932731a6224fce123b88f8efffeedf1b60",
+      "bytes": 2857,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/baseline.json"
+    },
+    {
+      "file": "system-audit-snapshots/original-preferences.bin",
+      "sha256": "4489f9560a7f75e278de5e8e494799f8e18a922b9a8375c98cbdbf47dcc0294f",
+      "bytes": 172,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/original-preferences.bin"
+    },
+    {
+      "file": "system-audit-snapshots/original-project-hashes.json",
+      "sha256": "b7ab582716fe1252a78e31723f1542ac20e0cf571cab8793f34396f61a7c571c",
+      "bytes": 395,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/original-project-hashes.json"
+    },
+    {
+      "file": "system-audit-snapshots/final-project-hashes.json",
+      "sha256": "b7ab582716fe1252a78e31723f1542ac20e0cf571cab8793f34396f61a7c571c",
+      "bytes": 395,
+      "source": "/private/tmp/smile-studio-verified/verification/system-appearance-2026-10-18T06-23-22-123Z/final-project-hashes.json"
+    }
+  ],
+  "sourceProvenance": {
+    "mirror": "/private/tmp/smile-studio-verified",
+    "runtimeOwnerFrozenFileCount": 115,
+    "originalMirrorHashes": "Runtime owner confirmed all 115 source hashes match before the exclusive GO; no app source changes by this audit."
+  }
+}

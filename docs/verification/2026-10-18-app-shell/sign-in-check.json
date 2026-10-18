@@ -1,0 +1,17 @@
+{
+  "inputs": [],
+  "providers": [
+    {
+      "disabled": true,
+      "label": "Continue with Apple. Design preview only. Sign-in is not available."
+    },
+    {
+      "disabled": true,
+      "label": "Continue with Google. Design preview only. Sign-in is not available."
+    },
+    {
+      "disabled": true,
+      "label": "Continue with email. Design preview only. Sign-in is not available."
+    }
+  ]
+}

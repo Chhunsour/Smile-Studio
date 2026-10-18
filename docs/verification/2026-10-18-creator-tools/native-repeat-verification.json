@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-10-18T06:27:15.703Z",
+  "method": "Invoke the refreshed core helper inside the native Hermes runtime using a private immutable fixture copy; no live-editor or saved-project edits",
+  "extendIdempotent": true,
+  "extendedOverlappingTailCount": 1,
+  "extendedStarts": [
+    1,
+    13,
+    5,
+    9
+  ],
+  "liveProjectUntouched": true,
+  "shortenIdempotent": true,
+  "shortenedOverlappingTailCount": 1,
+  "shortenedStarts": [
+    1,
+    5
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "prebuildExit": 0,
+  "podInstallExit": 0,
+  "podCount": 118,
+  "podfileDependencies": 119,
+  "workspace": "/private/tmp/smile-studio-verified/ios/SmileStudio.xcworkspace",
+  "UIUserInterfaceStyle": "Automatic",
+  "rootBackground": "0xfff7f6f2",
+  "jsVersions": {
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  },
+  "installedJSVersions": {
+    "expo": "57.0.27",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  },
+  "podVersions": {
+    "Expo": "57.0.27",
+    "ExpoVideo": "57.0.5",
+    "ExpoSystemUI": "57.0.4",
+    "React": "0.86.3",
+    "React-Core-prebuilt": "0.86.3",
+    "ReactNativeDependencies": "0.86.3",
+    "SmileEngine": "1.0.0",
+    "hermes-engine": "250829098.0.17"
+  },
+  "podLocksMatch": true,
+  "baseline112MirrorUnchanged": true,
+  "baselineManifestSHA256": "e458e5a6c516f5697a95a7f286bd8b91a966af6860aca6ab2db12f41fa67b2aa",
+  "mirrorChangedFiles": [],
+  "originalChangedFilesSinceBaseline": [],
+  "originalEditsByThisAgent": false,
+  "nativeBuildOrRuntimeActions": false,
+  "noAndroidDirectory": true,
+  "commands": {
+    "prebuild": "EXPO_HOME=/private/tmp/smile-studio-native-prep/expo-home __UNSAFE_EXPO_HOME_DIRECTORY=/private/tmp/smile-studio-native-prep/expo-home EXPO_NO_TELEMETRY=1 CI=1 node node_modules/expo/bin/cli prebuild --platform ios --no-clean --no-install --skip-dependency-update react-native,react",
+    "pods": "CP_HOME_DIR=/private/tmp/smile-studio-native-prep/cocoapods/home CP_CACHE_DIR=/private/tmp/smile-studio-native-prep/cocoapods/cache COCOAPODS_DISABLE_STATS=true EXPO_HOME=/private/tmp/smile-studio-native-prep/expo-home __UNSAFE_EXPO_HOME_DIRECTORY=/private/tmp/smile-studio-native-prep/expo-home EXPO_NO_TELEMETRY=1 pod install"
+  },
+  "logs": [
+    "prebuild.log",
+    "pod-install.log"
+  ],
+  "verificationDate": "2026-10-18",
+  "timezone": "Asia/Phnom_Penh",
+  "nativeDependenciesReady": true,
+  "iosAllocatedKiB": 1278748,
+  "podsAllocatedKiB": 1277884,
+  "isolatedCocoaPodsCacheAllocatedKiB": 1008988,
+  "splashGenerated": {
+    "lightBackground": "#F7F6F2",
+    "darkBackground": "#101113",
+    "logoWidth": 96,
+    "logoVariants": [
+      "light1x",
+      "light2x",
+      "light3x",
+      "dark1x",
+      "dark2x",
+      "dark3x"
+    ]
+  },
+  "sourceSnapshotNote": "All112 baseline files in original and mirror matched at final native-prep check. The owner may subsequently change original TS/audio protection code and will refresh the mirror before the single build.",
+  "expoCredentialIsolationVariable": "__UNSAFE_EXPO_HOME_DIRECTORY",
+  "expoHome": "/private/tmp/smile-studio-native-prep/expo-home",
+  "cocoaPodsHome": "/private/tmp/smile-studio-native-prep/cocoapods/home",
+  "cocoaPodsCache": "/private/tmp/smile-studio-native-prep/cocoapods/cache",
+  "reactNativePublicArtifactCacheNote": "RN reused checksum-verified existing shared public artifact tarballs from /Users/m4/Library/Caches/ReactNative; no cache misses or credential reads reported.",
+  "errors": []
+}

@@ -1,0 +1,29 @@
+{
+  "controls": [
+    {
+      "disabled": false,
+      "kind": "button",
+      "label": "Edit profile",
+      "state": {
+        "disabled": false
+      }
+    },
+    {
+      "disabled": false,
+      "kind": "button",
+      "label": "Explore the sign-in design preview. Accounts are not connected yet.",
+      "state": {
+        "disabled": false
+      }
+    }
+  ],
+  "preferences": {
+    "appearance": "dark",
+    "avatarTone": "sage",
+    "bio": "Native local profile verification.",
+    "defaultAspect": "9:16",
+    "displayName": "Smile test ស្នាមញញឹម",
+    "exportFps": 30,
+    "exportResolution": 1080
+  }
+}

@@ -1,0 +1,15 @@
+diff --git a/node_modules/expo-video/ios/VideoManager.swift b/node_modules/expo-video/ios/VideoManager.swift
+index c2ebd04..d4405d1 100644
+--- a/node_modules/expo-video/ios/VideoManager.swift
++++ b/node_modules/expo-video/ios/VideoManager.swift
+@@ -117,6 +117,10 @@ class VideoManager {
+ 
+   private func setAudioSession() {
+     let audioSession = AVAudioSession.sharedInstance()
++    // Smile Studio: don't take the session away from a voiceover recording (expo-audio sets .playAndRecord).
++    if audioSession.category == .playAndRecord {
++      return
++    }
+     let audioMixingMode = findAudioMixingMode()
+     var audioSessionCategoryOptions: AVAudioSession.CategoryOptions = audioSession.categoryOptions
+ 

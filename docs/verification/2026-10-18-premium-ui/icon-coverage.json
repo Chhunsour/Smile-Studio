@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-18",
+  "drawings": 100,
+  "recognizedEditorIconNames": 96,
+  "missingDrawings": [],
+  "notes": "Static coverage of icon-like string names in editor JSX; native rendering proof recorded separately."
+}
